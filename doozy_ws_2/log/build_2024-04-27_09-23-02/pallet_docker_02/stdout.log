@@ -1,0 +1,35 @@
+running egg_info
+writing ../../build/pallet_docker_02/pallet_docker_02.egg-info/PKG-INFO
+writing dependency_links to ../../build/pallet_docker_02/pallet_docker_02.egg-info/dependency_links.txt
+writing entry points to ../../build/pallet_docker_02/pallet_docker_02.egg-info/entry_points.txt
+writing requirements to ../../build/pallet_docker_02/pallet_docker_02.egg-info/requires.txt
+writing top-level names to ../../build/pallet_docker_02/pallet_docker_02.egg-info/top_level.txt
+reading manifest file '../../build/pallet_docker_02/pallet_docker_02.egg-info/SOURCES.txt'
+writing manifest file '../../build/pallet_docker_02/pallet_docker_02.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+running install_egg_info
+removing '/home/doozy/doozy_robotics/doozy_ws_2/install/pallet_docker_02/lib/python3.10/site-packages/pallet_docker_02-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/pallet_docker_02/pallet_docker_02.egg-info to /home/doozy/doozy_robotics/doozy_ws_2/install/pallet_docker_02/lib/python3.10/site-packages/pallet_docker_02-0.0.0-py3.10.egg-info
+running install_scripts
+Installing CLIENT script to /home/doozy/doozy_robotics/doozy_ws_2/install/pallet_docker_02/lib/pallet_docker_02
+Installing DOCK_to_DOLLY script to /home/doozy/doozy_robotics/doozy_ws_2/install/pallet_docker_02/lib/pallet_docker_02
+Installing NAV_to_POSITION script to /home/doozy/doozy_robotics/doozy_ws_2/install/pallet_docker_02/lib/pallet_docker_02
+Installing SERVER script to /home/doozy/doozy_robotics/doozy_ws_2/install/pallet_docker_02/lib/pallet_docker_02
+Installing client_01 script to /home/doozy/doozy_robotics/doozy_ws_2/install/pallet_docker_02/lib/pallet_docker_02
+Installing dock_to_dolly script to /home/doozy/doozy_robotics/doozy_ws_2/install/pallet_docker_02/lib/pallet_docker_02
+Installing dock_to_dolly2 script to /home/doozy/doozy_robotics/doozy_ws_2/install/pallet_docker_02/lib/pallet_docker_02
+Installing get_pallet_tf script to /home/doozy/doozy_robotics/doozy_ws_2/install/pallet_docker_02/lib/pallet_docker_02
+Installing pallet_navi script to /home/doozy/doozy_robotics/doozy_ws_2/install/pallet_docker_02/lib/pallet_docker_02
+Installing pallet_navi_01 script to /home/doozy/doozy_robotics/doozy_ws_2/install/pallet_docker_02/lib/pallet_docker_02
+Installing pallet_navi_02 script to /home/doozy/doozy_robotics/doozy_ws_2/install/pallet_docker_02/lib/pallet_docker_02
+Installing pallet_navi_03 script to /home/doozy/doozy_robotics/doozy_ws_2/install/pallet_docker_02/lib/pallet_docker_02
+Installing pallet_navi_04 script to /home/doozy/doozy_robotics/doozy_ws_2/install/pallet_docker_02/lib/pallet_docker_02
+Installing server_01 script to /home/doozy/doozy_robotics/doozy_ws_2/install/pallet_docker_02/lib/pallet_docker_02
+Installing sick_visionary_t_mini script to /home/doozy/doozy_robotics/doozy_ws_2/install/pallet_docker_02/lib/pallet_docker_02
+Installing tb3_cam_node script to /home/doozy/doozy_robotics/doozy_ws_2/install/pallet_docker_02/lib/pallet_docker_02
+Installing tf_broadcaster script to /home/doozy/doozy_robotics/doozy_ws_2/install/pallet_docker_02/lib/pallet_docker_02
+writing list of installed files to '/home/doozy/doozy_robotics/doozy_ws_2/build/pallet_docker_02/install.log'

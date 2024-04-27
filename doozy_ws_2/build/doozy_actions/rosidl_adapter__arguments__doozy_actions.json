@@ -1,0 +1,9 @@
+{
+  "package_name": "doozy_actions",
+  "non_idl_tuples": [
+    "/home/doozy/doozy_robotics/doozy_ws_2/src/doozy_actions:action/DollyDock.action",
+    "/home/doozy/doozy_robotics/doozy_ws_2/src/doozy_actions:msg/Docking.msg",
+    "/home/doozy/doozy_robotics/doozy_ws_2/src/doozy_actions:msg/Diagnostics.msg",
+    "/home/doozy/doozy_robotics/doozy_ws_2/src/doozy_actions:msg/Navigation.msg"
+  ]
+}

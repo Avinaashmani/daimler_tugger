@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="pallet_bot">
+  <link
+    name="base_footprint">
+    <inertial>
+      <origin
+        xyz="-2.77555756156289E-17 -4.85722573273506E-17 0.015"
+        rpy="0 0 0" />
+      <mass
+        value="9.42477796076937E-05" />
+      <inertia
+        ixx="7.09214541547894E-09"
+        ixy="9.26645868719011E-57"
+        ixz="-2.73196242009684E-42"
+        iyy="7.09214541547894E-09"
+        iyz="2.45339658056805E-23"
+        izz="4.71238898038469E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_bot/meshes/base_footprint.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_bot/meshes/base_footprint.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-2.0153E-05 2.0331E-07 -0.081114"
+        rpy="0 0 0" />
+      <mass
+        value="20" />
+      <inertia
+        ixx="0.015178"
+        ixy="5.0686E-05"
+        ixz="4.7124E-06"
+        iyy="0.020004"
+        iyz="-3.1114E-05"
+        izz="0.013371" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_bot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_bot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="base_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.204"
+      rpy="0 0 0" />
+    <parent
+      link="base_footprint" />
+    <child
+      link="base_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+
+  <link
+    name="l_wheel_link">
+    <inertial>
+      <origin
+        xyz="5.4872E-09 -0.00030104 -0.029665"
+        rpy="0 0 0" />
+      <mass
+        value="1.2164" />
+      <inertia
+        ixx="0.004444"
+        ixy="1.3003E-06"
+        ixz="-1.3225E-08"
+        iyy="0.0044426"
+        iyz="3.8389E-05"
+        izz="0.0082254" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_bot/meshes/l_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_bot/meshes/l_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="l_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.00279037445358102 0.274985842927247 -0.104"
+      rpy="1.5707963267949 -1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="l_wheel_link" />
+    <axis
+      xyz="0 0.0101468161948486 0.999948519735445" />
+  </joint>
+
+
+
+  <link
+    name="r_wheel_link">
+    <inertial>
+      <origin
+        xyz="1.6511E-08 -0.00030101 -0.029665"
+        rpy="0 0 0" />
+      <mass
+        value="1.2164" />
+      <inertia
+        ixx="0.0044446"
+        ixy="-4.9253E-07"
+        ixz="4.9233E-09"
+        iyy="0.004442"
+        iyz="3.8395E-05"
+        izz="0.0082254" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_bot/meshes/r_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_bot/meshes/r_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+
+  <joint
+    name="r_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0027903744535811 -0.274985842927247 -0.104"
+      rpy="1.57079632679489 -1.5707963267949 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="r_wheel_link" />
+    <axis
+      xyz="0 0.010146816194848 0.999948519735445" />
+  </joint>
+
+
+
+  <link
+    name="l_laser_link">
+    <inertial>
+      <origin
+        xyz="0 1.6653E-16 -0.0395"
+        rpy="0 0 0" />
+      <mass
+        value="0.3971" />
+      <inertia
+        ixx="0.00036536"
+        ixy="2.0799E-51"
+        ixz="-1.2125E-36"
+        iyy="0.00036536"
+        iyz="1.5383E-19"
+        izz="0.00031768" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_bot/meshes/l_laser_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_bot/meshes/l_laser_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="l_laser_joint"
+    type="fixed">
+    <origin
+      xyz="0.255 0.368323028564001 -0.0929999999999988"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="l_laser_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+
+  <link
+    name="r_laser_link">
+    <inertial>
+      <origin
+        xyz="0 1.6653E-16 -0.0395"
+        rpy="0 0 0" />
+      <mass
+        value="0.3971" />
+      <inertia
+        ixx="0.00036536"
+        ixy="2.0799E-51"
+        ixz="-1.2125E-36"
+        iyy="0.00036536"
+        iyz="1.5383E-19"
+        izz="0.00031768" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_bot/meshes/r_laser_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_bot/meshes/r_laser_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="r_laser_joint"
+    type="fixed">
+    <origin
+      xyz="0.255000000000001 -0.368323028563999 -0.0930000000000014"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="r_laser_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+
+  
+  <link
+    name="fork_link">
+    <inertial>
+      <origin
+        xyz="0.35746 0.00015734 0.13709"
+        rpy="0 0 0" />
+      <mass
+        value="100" />
+      <inertia
+        ixx="2.0452"
+        ixy="0.00031975"
+        ixz="-0.74152"
+        iyy="3.9922"
+        iyz="0.00011605"
+        izz="4.5718" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_bot/meshes/fork_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_bot/meshes/fork_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="fork_joint"
+    type="revolute">
+    <origin
+      xyz="-0.78909 0 -0.1182"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="fork_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="4.7"
+      upper="1.5"
+      effort="150"
+      velocity="0.1" />
+  </joint>
+</robot>

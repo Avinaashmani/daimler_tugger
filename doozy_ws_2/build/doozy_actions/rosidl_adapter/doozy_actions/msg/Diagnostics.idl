@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from doozy_actions/msg/Diagnostics.msg
+// generated code does not contain a copyright notice
+
+
+module doozy_actions {
+  module msg {
+    struct Diagnostics {
+      boolean has_reached_position;
+
+      string safe_to_latch;
+
+      boolean is_latched;
+
+      string docking_status;
+
+      boolean sick_detection;
+
+      string camera_health;
+
+      string error;
+    };
+  };
+};

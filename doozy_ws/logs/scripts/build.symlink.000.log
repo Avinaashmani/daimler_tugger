@@ -1,0 +1,7 @@
+Symlinking /home/avinaash/doozy_robotics/doozy_ws/devel/lib/python3/dist-packages/scripts/__init__.py
+Symlinking /home/avinaash/doozy_robotics/doozy_ws/devel/lib/pkgconfig/scripts.pc
+Symlinking /home/avinaash/doozy_robotics/doozy_ws/devel/share/roseus/ros/scripts/manifest.l
+Symlinking /home/avinaash/doozy_robotics/doozy_ws/devel/share/scripts/cmake/scripts-msg-extras.cmake
+Symlinking /home/avinaash/doozy_robotics/doozy_ws/devel/share/scripts/cmake/scriptsConfig.cmake
+Symlinking /home/avinaash/doozy_robotics/doozy_ws/devel/share/scripts/cmake/scripts-msg-paths.cmake
+Symlinking /home/avinaash/doozy_robotics/doozy_ws/devel/share/scripts/cmake/scriptsConfig-version.cmake

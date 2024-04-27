@@ -1,0 +1,8 @@
+prefix=/home/avinaash/doozy_robotics/doozy_ws/install
+
+Name: tugging_robot_180424
+Description: Description of tugging_robot_180424
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

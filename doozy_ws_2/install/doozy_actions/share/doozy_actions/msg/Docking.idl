@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from doozy_actions/msg/Docking.msg
+// generated code does not contain a copyright notice
+
+
+module doozy_actions {
+  module msg {
+    struct Docking {
+      boolean docked_to_target;
+
+      boolean safe_to_latch;
+
+      double distance_to_target;
+
+      double angle_to_target;
+
+      string target_tf_status;
+
+      string error;
+    };
+  };
+};

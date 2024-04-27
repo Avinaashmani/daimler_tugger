@@ -1,0 +1,6 @@
+source;share/2_t_dolly_logistics_driver/hook/pythonpath.ps1
+source;share/2_t_dolly_logistics_driver/hook/pythonpath.dsv
+source;share/2_t_dolly_logistics_driver/hook/pythonpath.sh
+source;share/2_t_dolly_logistics_driver/hook/ament_prefix_path.ps1
+source;share/2_t_dolly_logistics_driver/hook/ament_prefix_path.dsv
+source;share/2_t_dolly_logistics_driver/hook/ament_prefix_path.sh

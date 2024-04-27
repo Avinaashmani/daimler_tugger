@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="fork_bot">
+  <link
+    name="base_footprint">
+    <inertial>
+      <origin
+        xyz="4.1633E-17 -4.996E-16 0.015"
+        rpy="0 0 0" />
+      <mass
+        value="9.4248E-05" />
+      <inertia
+        ixx="7.0921E-09"
+        ixy="0"
+        ixz="2.2824E-25"
+        iyy="7.0921E-09"
+        iyz="-2.5464E-23"
+        izz="4.7124E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fork_bot/meshes/base_footprint.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fork_bot/meshes/base_footprint.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="5.2256E-05 0.00015303 -0.12797"
+        rpy="0 0 0" />
+      <mass
+        value="20" />
+      <inertia
+        ixx="0.015438"
+        ixy="-4.3699E-05"
+        ixz="-8.306E-06"
+        iyy="0.020516"
+        iyz="-2.3218E-07"
+        izz="0.013628" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fork_bot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fork_bot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.29"
+      rpy="0 0 0" />
+    <parent
+      link="base_footprint" />
+    <child
+      link="base_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="l_wheel_link">
+    <inertial>
+      <origin
+        xyz="0.00026592 -0.029666 1.6511E-08"
+        rpy="0 0 0" />
+      <mass
+        value="1.2164" />
+      <inertia
+        ixx="0.0044419"
+        ixy="-3.3916E-05"
+        ixz="-4.9254E-07"
+        iyy="0.0082254"
+        iyz="-4.4894E-09"
+        izz="0.0044446" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fork_bot/meshes/l_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fork_bot/meshes/l_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="l_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.0024648 0.27499 -0.15"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="l_wheel_link" />
+    <axis
+      xyz="0.0089631 -0.99996 0" />
+  </joint>
+  <link
+    name="r_wheel_link">
+    <inertial>
+      <origin
+        xyz="-0.00026589 0.029666 -1.6511E-08"
+        rpy="0 0 0" />
+      <mass
+        value="1.2164" />
+      <inertia
+        ixx="0.0044419"
+        ixy="-3.3916E-05"
+        ixz="4.9254E-07"
+        iyy="0.0082254"
+        iyz="4.3402E-09"
+        izz="0.0044446" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fork_bot/meshes/r_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fork_bot/meshes/r_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.0024626 -0.27474 -0.15"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="r_wheel_link" />
+    <axis
+      xyz="-0.0089631 0.99996 0" />
+  </joint>
+  <link
+    name="laser_link">
+    <inertial>
+      <origin
+        xyz="0 0 -0.0395"
+        rpy="0 0 0" />
+      <mass
+        value="0.3971" />
+      <inertia
+        ixx="0.00036536"
+        ixy="-4.2352E-21"
+        ixz="-2.2304E-21"
+        iyy="0.00036536"
+        iyz="-1.9992E-23"
+        izz="0.00031768" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fork_bot/meshes/laser_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fork_bot/meshes/laser_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="laser_joint"
+    type="fixed">
+    <origin
+      xyz="0 0 0.119"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="laser_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="fork_link">
+    <inertial>
+      <origin
+        xyz="0.20963 1.3878E-16 0.15334"
+        rpy="0 0 0" />
+      <mass
+        value="70" />
+      <inertia
+        ixx="1.5144"
+        ixy="-1.7573E-15"
+        ixz="-0.75137"
+        iyy="3.7201"
+        iyz="-6.5226E-16"
+        izz="3.9312" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fork_bot/meshes/fork_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://fork_bot/meshes/fork_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fork_joint"
+    type="revolute">
+    <origin
+      xyz="-0.7713 0 -0.26"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="fork_link" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>

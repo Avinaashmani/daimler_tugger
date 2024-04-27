@@ -1,0 +1,8 @@
+bool reached_point
+string idx_no
+---
+bool docked_to_dolly
+---
+string distance_to_dolly
+string angle_to_dolly
+

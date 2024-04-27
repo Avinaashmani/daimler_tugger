@@ -1,0 +1,44 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/doozy/doozy_robotics/doozy_ws_2/install/turtlebot3_gazebo/include/**",
+        "/home/doozy/doozy_robotics/doozy_ws_2/install/turtlebot3_fake_node/include/**",
+        "/home/doozy/doozy_robotics/doozy_ws_2/install/stereo_image_proc/include/**",
+        "/home/doozy/doozy_robotics/doozy_ws_2/install/image_proc/include/**",
+        "/home/doozy/doozy_robotics/doozy_ws_2/install/tracetools_image_pipeline/include/**",
+        "/home/doozy/doozy_robotics/doozy_ws_2/install/image_view/include/**",
+        "/home/doozy/doozy_robotics/doozy_ws_2/install/image_rotate/include/**",
+        "/home/doozy/doozy_robotics/doozy_ws_2/install/image_publisher/include/**",
+        "/home/doozy/doozy_robotics/doozy_ws_2/install/depth_image_proc/include/**",
+        "/home/doozy/doozy_robotics/doozy_ws_2/install/image_geometry/include/**",
+        "/home/doozy/doozy_robotics/doozy_ws_2/install/cv_bridge/include/**",
+        "/home/doozy/doozy_robotics/doozy_ws_2/install/apriltag_msgs/include/**",
+        "/home/doozy/ros2_ws/install/twist_mux/include/**",
+        "/home/doozy/ros2_ws/install/serial/include/**",
+        "/home/doozy/ros2_ws/install/pointcloud_to_laserscan/include/**",
+        "/home/doozy/ros2_ws/install/nav2_collision_monitor/include/**",
+        "/home/doozy/ros2_ws/install/nav2_util/include/**",
+        "/home/doozy/ros2_ws/install/nav2_msgs/include/**",
+        "/home/doozy/ros2_ws/install/doozy_interface/include/**",
+        "/home/doozy/do_ws/install/undock_msgs/include/**",
+        "/home/doozy/do_ws/install/doozy_interface/include/**",
+        "/home/doozy/do_ws/install/autodock_msgs/include/**",
+        "/home/doozy/neuronbot2_ros2_ws/install/serial/include/**",
+        "/home/doozy/neuronbot2_ros2_ws/install/openslam_gmapping/include/**",
+        "/opt/ros/humble/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

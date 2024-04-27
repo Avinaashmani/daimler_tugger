@@ -1,0 +1,4 @@
+source;share/doozy_actions/local_setup.bash
+source;share/doozy_actions/local_setup.dsv
+source;share/doozy_actions/local_setup.sh
+source;share/doozy_actions/local_setup.zsh

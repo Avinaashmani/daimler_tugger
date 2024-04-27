@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="tugging_robot_180424_2">
+  <link
+    name="base_footprint">
+    <inertial>
+      <origin
+        xyz="0.37605 -0.51412 0.49174"
+        rpy="0 0 0" />
+      <mass
+        value="9.4248E-05" />
+      <inertia
+        ixx="7.0921E-09"
+        ixy="2.732E-42"
+        ixz="9.9062E-57"
+        iyy="4.7124E-11"
+        iyz="-2.5059E-23"
+        izz="7.0921E-09" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tugging_robot_180424_2/meshes/base_footprint.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tugging_robot_180424_2/meshes/base_footprint.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.33588 -0.15455 0.30417"
+        rpy="0 0 0" />
+      <mass
+        value="63.313" />
+      <inertia
+        ixx="1.398"
+        ixy="-2.3015E-05"
+        ixz="-0.032148"
+        iyy="1.8967"
+        iyz="1.5634E-06"
+        izz="2.9958" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tugging_robot_180424_2/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tugging_robot_180424_2/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="base_joint"
+    type="fixed">
+    <origin
+      xyz="0.70895 -0.48043 0.63729"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_footprint" />
+    <child
+      link="base_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+
+  <link
+    name="l_wheel_link">
+    <inertial>
+      <origin
+        xyz="-1.5761E-08 -1.6217E-08 -0.64357"
+        rpy="0 0 0" />
+      <mass
+        value="1.2164" />
+      <inertia
+        ixx="0.0044416"
+        ixy="-4.3509E-07"
+        ixz="-4.9269E-11"
+        iyy="0.0044446"
+        iyz="-7.37E-11"
+        izz="0.0082257" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tugging_robot_180424_2/meshes/l_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tugging_robot_180424_2/meshes/l_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  
+  <joint
+    name="l_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.335 -0.48237 0.11759"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="l_wheel_link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="r_wheel_link">
+    <inertial>
+      <origin
+        xyz="-1.5453E-08 1.6511E-08 0.64357"
+        rpy="0 0 0" />
+      <mass
+        value="1.2164" />
+      <inertia
+        ixx="0.0044416"
+        ixy="4.9256E-07"
+        ixz="4.7872E-11"
+        iyy="0.0044446"
+        iyz="-7.4615E-11"
+        izz="0.0082257" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tugging_robot_180424_2/meshes/r_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tugging_robot_180424_2/meshes/r_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.335 0.18237 0.11759"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="r_wheel_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="laser_link">
+    <inertial>
+      <origin
+        xyz="-7.8753E-05 4.4713E-05 -0.045208"
+        rpy="0 0 0" />
+      <mass
+        value="0.5925" />
+      <inertia
+        ixx="0.00070857"
+        ixy="-1.3149E-06"
+        ixz="1.5954E-06"
+        iyy="0.00070664"
+        iyz="3.8009E-07"
+        izz="0.00080931" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tugging_robot_180424_2/meshes/laser_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tugging_robot_180424_2/meshes/laser_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="laser_joint"
+    type="fixed">
+    <origin
+      xyz="0.10254 -0.15013 0.29248"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="laser_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="camera_link">
+    <inertial>
+      <origin
+        xyz="-0.013293 -0.0014081 2.3419E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.036474" />
+      <inertia
+        ixx="2.3405E-05"
+        ixy="-2.1067E-07"
+        ixz="-1.0144E-08"
+        iyy="3.5064E-06"
+        iyz="1.6649E-09"
+        izz="2.3613E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tugging_robot_180424_2/meshes/camera_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.70196 0.70196 0.70196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tugging_robot_180424_2/meshes/camera_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="camera_joint"
+    type="prismatic">
+    <origin
+      xyz="0.165 -0.1503 0.33308"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera_link" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="tug_arm">
+    <inertial>
+      <origin
+        xyz="-0.3066 0.001304 0.055888"
+        rpy="0 0 0" />
+      <mass
+        value="4.352" />
+      <inertia
+        ixx="0.023067"
+        ixy="2.8685E-05"
+        ixz="-0.00052821"
+        iyy="0.032123"
+        iyz="1.6731E-06"
+        izz="0.019556" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tugging_robot_180424_2/meshes/tug_arm.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tugging_robot_180424_2/meshes/tug_arm.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tug_joint"
+    type="revolute">
+    <origin
+      xyz="-0.337 -0.148 0.48859"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="tug_arm" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="-1.57"
+      effort="1"
+      velocity="1" />
+  </joint>
+  <link
+    name="sick_visionary_t_mini">
+    <inertial>
+      <origin
+        xyz="0.033916 -0.00010743 2.0961E-13"
+        rpy="0 0 0" />
+      <mass
+        value="0.38171" />
+      <inertia
+        ixx="0.0003602"
+        ixy="-1.7782E-07"
+        ixz="-1.1037E-14"
+        iyy="0.00030406"
+        iyz="-4.2545E-12"
+        izz="0.00035182" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tugging_robot_180424_2/meshes/sick_visionary_t_mini.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tugging_robot_180424_2/meshes/sick_visionary_t_mini.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="sick_joint"
+    type="fixed">
+    <origin
+      xyz="-0.74298 -0.00067763 0.17834"
+      rpy="0 0 0" />
+    <parent
+      link="tug_arm" />
+    <child
+      link="sick_visionary_t_mini" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

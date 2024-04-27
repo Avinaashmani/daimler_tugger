@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="pallet_truck_ultrasonic">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.51723 1.5338 0.375"
+        rpy="0 0 0" />
+      <mass
+        value="21.942" />
+      <inertia
+        ixx="0.75222"
+        ixy="0.050252"
+        ixz="0.37049"
+        iyy="2.1321"
+        iyz="-0.0083418"
+        izz="1.9233" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_truck_ultrasonic/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.29804 0.29804 0.29804 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_truck_ultrasonic/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="left_wheel">
+    <inertial>
+      <origin
+        xyz="0.08 -0.045826 8.9621E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.42633" />
+      <inertia
+        ixx="0.00047066"
+        ixy="-4.0658E-19"
+        ixz="-7.6656E-20"
+        iyy="0.00034229"
+        iyz="-1.7025E-19"
+        izz="0.00047066" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_truck_ultrasonic/meshes/left_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.16863 0.16863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_truck_ultrasonic/meshes/left_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_joint"
+    type="continuous">
+    <origin
+      xyz="-1.3501 -0.37262 1.6341"
+      rpy="0.056808 0.32641 0.29511" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_wheel" />
+    <axis
+      xyz="0 -1 0" />
+  </joint>
+  <link
+    name="right_wheel">
+    <inertial>
+      <origin
+        xyz="0.00014017 -0.40927 0.023067"
+        rpy="0 0 0" />
+      <mass
+        value="0.42633" />
+      <inertia
+        ixx="0.00047066"
+        ixy="-4.0658E-19"
+        ixz="5.5057E-21"
+        iyy="0.00034229"
+        iyz="1.5585E-19"
+        izz="0.00047066" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_truck_ultrasonic/meshes/right_wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 0.16863 0.16863 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_truck_ultrasonic/meshes/right_wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_joint"
+    type="continuous">
+    <origin
+      xyz="-1.2326 -0.81277 1.5876"
+      rpy="-0.056808 -0.32641 -2.8465" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_wheel" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="right_sensor">
+    <inertial>
+      <origin
+        xyz="-0.013286 0.033962 -0.35918"
+        rpy="0 0 0" />
+      <mass
+        value="0.0031408" />
+      <inertia
+        ixx="1.3272E-07"
+        ixy="-4.2905E-09"
+        ixz="-2.866E-10"
+        iyy="1.3266E-07"
+        iyz="2.0268E-09"
+        izz="1.2596E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_truck_ultrasonic/meshes/right_sensor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_truck_ultrasonic/meshes/right_sensor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="right_sens_joint"
+    type="fixed">
+    <origin
+      xyz="-1.3427 -0.80567 1.7296"
+      rpy="1.6833 -1.0714 0.17798" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_sensor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="left_sensor">
+    <inertial>
+      <origin
+        xyz="-0.0011059 -0.036594 0.3593"
+        rpy="0 0 0" />
+      <mass
+        value="0.0031408" />
+      <inertia
+        ixx="1.3078E-07"
+        ixy="8.4035E-10"
+        ixz="-3.4489E-09"
+        iyy="1.2642E-07"
+        iyz="-3.17E-09"
+        izz="1.3415E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_truck_ultrasonic/meshes/left_sensor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_truck_ultrasonic/meshes/left_sensor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_sense_joint"
+    type="fixed">
+    <origin
+      xyz="-1.4733 -0.47057 1.7604"
+      rpy="1.6833 -1.0714 0.17798" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_sensor" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="center_sensor">
+    <inertial>
+      <origin
+        xyz="-0.0068836 -9.5297E-05 0.0024789"
+        rpy="0 0 0" />
+      <mass
+        value="0.0031408" />
+      <inertia
+        ixx="1.3394E-07"
+        ixy="-1.1424E-09"
+        ixz="3.9606E-09"
+        iyy="1.2644E-07"
+        iyz="-2.5375E-09"
+        izz="1.3096E-07" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_truck_ultrasonic/meshes/center_sensor.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://pallet_truck_ultrasonic/meshes/center_sensor.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="center_sense_joint"
+    type="fixed">
+    <origin
+      xyz="-0.53518 -0.3674 1.4251"
+      rpy="-0.056808 -0.32641 -2.8465" />
+    <parent
+      link="base_link" />
+    <child
+      link="center_sensor" />
+    <axis
+      xyz="0.27549 0.96052 -0.038786" />
+  </joint>
+</robot>

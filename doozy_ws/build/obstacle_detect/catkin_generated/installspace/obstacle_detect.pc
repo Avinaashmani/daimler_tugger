@@ -1,0 +1,8 @@
+prefix=/home/avinaash/doozy_robotics/doozy_ws/install
+
+Name: obstacle_detect
+Description: Description of obstacle_detect
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

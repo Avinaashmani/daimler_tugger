@@ -1,0 +1,8 @@
+prefix=/home/avinaash/doozy_robotics/doozy_ws/devel/.private/ultrasonic_pallete_aligner
+
+Name: ultrasonic_pallete_aligner
+Description: Description of ultrasonic_pallete_aligner
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

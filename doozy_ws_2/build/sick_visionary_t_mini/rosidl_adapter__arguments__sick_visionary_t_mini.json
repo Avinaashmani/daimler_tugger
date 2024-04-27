@@ -1,0 +1,6 @@
+{
+  "package_name": "sick_visionary_t_mini",
+  "non_idl_tuples": [
+    "/home/doozy/doozy_robotics/doozy_ws_2/src/sick_visionary_t_mini:msg/SickTMini.msg"
+  ]
+}

@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from doozy_actions/action/DollyDock.action
+// generated code does not contain a copyright notice
+
+
+module doozy_actions {
+  module action {
+    struct DollyDock_Goal {
+      boolean reached_point;
+
+      string idx_no;
+    };
+    struct DollyDock_Result {
+      boolean docked_to_dolly;
+    };
+    struct DollyDock_Feedback {
+      string distance_to_dolly;
+
+      string angle_to_dolly;
+    };
+  };
+};

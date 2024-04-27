@@ -1,0 +1,7 @@
+<launch>
+    <!-- Launch first script -->
+    <node name="navigation_node" pkg="scripts" type="apriltag_movebase_09.py" output="screen" />
+
+    <!-- Launch second script -->
+    <node name="tf_bounding_box" pkg="scripts" type="broadcast_tf.py" output="screen" />
+</launch>

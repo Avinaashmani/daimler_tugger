@@ -1,0 +1,8 @@
+prefix=/home/avinaash/doozy_robotics/doozy_ws/install
+
+Name: scripts
+Description: Description of scripts
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib -lscripts
+Requires: geometry_msgs std_msgs roscpp rospy actionlib_msgs std_msgs message_runtime

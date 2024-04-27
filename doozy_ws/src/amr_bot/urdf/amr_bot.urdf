@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+
+<robot
+
+  name="amr_bot">
+
+  <!-- <link name="world" />
+
+  <joint name="world_to_base_footprint" type="fixed">
+    <parent link="world"/>
+    <child link="base_footprint"/>
+  </joint> -->
+
+  <link
+    name="base_footprint">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="9.4248E-05" />
+      <inertia
+        ixx="7.0921E-09"
+        ixy="1.0074E-56"
+        ixz="-2.732E-42"
+        iyy="7.0921E-09"
+        iyz="2.549E-23"
+        izz="4.7124E-11" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amr_bot/meshes/base_footprint.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amr_bot/meshes/base_footprint.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+<!-- BASE_LINK  -->
+
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="150" />
+      <inertia
+        ixx="1.4246"
+        ixy="-9.8747E-06"
+        ixz="-0.032685"
+        iyy="1.9347"
+        iyz="2.6064E-06"
+        izz="3.0189" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amr_bot/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amr_bot/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="base_joint"
+    type="fixed">
+    <origin
+      xyz="0.40456 -0.53802 0.5"
+      rpy="0 0 0" />
+    <parent
+      link="base_footprint" />
+    <child
+      link="base_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+<!-- WHEEL : LEFT -->
+
+  <link
+    name="l_wheel_link">
+    <inertial>
+      <origin
+        xyz="-1.5761E-08 -0.029667 -1.6217E-08"
+        rpy="0 0 0" />
+      <mass
+        value="1.2164" />
+      <inertia
+        ixx="0.0044416"
+        ixy="4.9269E-11"
+        ixz="-4.3509E-07"
+        iyy="0.0082257"
+        iyz="7.37E-11"
+        izz="0.0044446" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amr_bot/meshes/l_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amr_bot/meshes/l_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="l_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.03061 0.34088 0.06"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="l_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+
+<!-- WHEEL : RIGHT -->
+
+  <link
+    name="r_wheel_link">
+    <inertial>
+      <origin
+        xyz="-1.5453E-08 0.029667 1.6511E-08"
+        rpy="0 0 0" />
+      <mass
+        value="1.2164" />
+      <inertia
+        ixx="0.0044416"
+        ixy="-4.7872E-11"
+        ixz="4.9256E-07"
+        iyy="0.0082257"
+        iyz="7.4615E-11"
+        izz="0.0044446" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amr_bot/meshes/r_wheel_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amr_bot/meshes/r_wheel_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="r_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="-0.03061 -0.34086 0.06"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="r_wheel_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+
+<!-- LASER LINK -->
+
+  <link
+    name="laser_link">
+    <inertial>
+      <origin
+        xyz="-7.8753E-05 4.4713E-05 -0.045208"
+        rpy="0 0 0" />
+      <mass
+        value="0.5925" />
+      <inertia
+        ixx="0.00070857"
+        ixy="-1.3149E-06"
+        ixz="1.5954E-06"
+        iyy="0.00070664"
+        iyz="3.8009E-07"
+        izz="0.00080931" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amr_bot/meshes/laser_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amr_bot/meshes/laser_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="laser_joint"
+    type="fixed">
+    <origin
+      xyz="0.40693 -0.00011921 0.23489"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="laser_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+<!-- CAMERA LINK -->
+
+  <link
+    name="camera_link">
+    <inertial>
+      <origin
+        xyz="-0.013293 -0.0014081 2.3419E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.036474" />
+      <inertia
+        ixx="2.3405E-05"
+        ixy="-2.1067E-07"
+        ixz="-1.0144E-08"
+        iyy="3.5064E-06"
+        iyz="1.6649E-09"
+        izz="2.3613E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amr_bot/meshes/camera_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.70196 0.70196 0.70196 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amr_bot/meshes/camera_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="camera_joint"
+    type="fixed">
+    <origin
+      xyz="0.46939 -0.00028866 0.27549"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="camera_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+<!-- IMU LINK -->
+
+  <link
+    name="imu">
+    <inertial>
+      <origin
+        xyz="-0.00011027 -0.00033758 -0.0047293"
+        rpy="0 0 0" />
+      <mass
+        value="0.022761" />
+      <inertia
+        ixx="6.449E-06"
+        ixy="2.5391E-09"
+        ixz="2.4684E-09"
+        iyy="6.4691E-06"
+        iyz="-5.981E-10"
+        izz="1.2787E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amr_bot/meshes/imu.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amr_bot/meshes/imu.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="imu_joint"
+    type="fixed">
+    <origin
+      xyz="-0.020559 -0.0073322 0.016032"
+      rpy="0 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="imu" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+<!-- SICK CAMERA LINK -->
+
+  <link
+    name="sickcam_link">
+    <inertial>
+      <origin
+        xyz="0.033916 -0.00010743 2.0961E-13"
+        rpy="0 0 0" />
+      <mass
+        value="0.38171" />
+      <inertia
+        ixx="0.0003602"
+        ixy="-1.7782E-07"
+        ixz="-1.1037E-14"
+        iyy="0.00030406"
+        iyz="-4.2545E-12"
+        izz="0.00035182" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amr_bot/meshes/sickcam_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://amr_bot/meshes/sickcam_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="sickcam_joint"
+    type="fixed">
+    <origin
+      xyz="-0.77559 0.0013357 0.60934"
+      rpy="0 0 3.14" />
+    <parent
+      link="base_link" />
+    <child
+      link="sickcam_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+
+<!-- GAZEBO PLUGINS -->
+
+<gazebo>
+  <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+    <gravity>true</gravity>
+    <!-- Plugin update rate in Hz -->
+    <updateRate>20</updateRate>
+
+    <!-- Name of left joint, defaults to `left_joint` -->
+    <leftJoint>l_wheel_joint</leftJoint>
+
+    <!-- Name of right joint, defaults to `right_joint` -->
+    <rightJoint>r_wheel_joint</rightJoint>
+
+    <!-- The distance from the center of one wheel to the other, in meters, defaults to 0.34 m -->
+    <wheelSeparation>0.64</wheelSeparation>
+
+    <!-- Diameter of the wheels, in meters, defaults to 0.15 m -->
+    <wheelDiameter>0.25</wheelDiameter>
+
+    <!-- Wheel acceleration, in rad/s^2, defaults to 0.0 rad/s^2 -->
+    <wheelAcceleration>1.0</wheelAcceleration>
+
+    <!-- Maximum torque which the wheels can produce, in Nm, defaults to 5 Nm -->
+    <wheelTorque>20</wheelTorque>
+
+    <!-- Topic to receive geometry_msgs/Twist message commands, defaults to `cmd_vel` -->
+    <commandTopic>cmd_vel</commandTopic>
+
+    <!-- Topic to publish nav_msgs/Odometry messages, defaults to `odom` -->
+    <odometryTopic>odom</odometryTopic>
+
+    <!-- Odometry frame, defaults to `odom` -->
+    <odometryFrame>odom</odometryFrame>
+
+    <!-- Robot frame to calculate odometry from, defaults to `base_footprint` -->
+    <robotBaseFrame>base_link</robotBaseFrame>
+
+    <!-- Odometry source, 0 for ENCODER, 1 for WORLD, defaults to WORLD -->
+    <odometrySource>1</odometrySource>
+
+    <!-- Set to true to publish transforms for the wheel links, defaults to false -->
+    <publishWheelTF>false</publishWheelTF>
+
+    <!-- Set to true to publish transforms for the odometry, defaults to true -->
+    <publishOdom>true</publishOdom>
+
+    <!-- Set to true to publish sensor_msgs/JointState on /joint_states for the wheel joints, defaults to false -->
+    <publishWheelJointState>false</publishWheelJointState>
+
+    <!-- Set to true to swap right and left wheels, defaults to true -->
+    <legacyMode>false</legacyMode>
+
+  </plugin>
+
+    <sensor name="imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <topic>tug_robot/imu</topic>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>imu</topicName>
+        <bodyName>imu_link</bodyName>
+        <updateRateHZ>10.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0 0 0</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <frameName>imu</frameName>
+        <initialOrientationAsReference>false</initialOrientationAsReference>
+      </plugin>
+      <pose>0 0 0 0 0 0</pose>
+    </sensor>
+  </gazebo>
+
+  <gazebo reference="laser_link">
+    <material>Gazebo/FlatBlack</material>
+    <sensor type="ray" name="lds_lfcd_sensor">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>true</visualize>
+      <update_rate>10</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>760</samples>
+            <resolution>1</resolution>
+            <min_angle>-1.91</min_angle>
+            <max_angle>1.91</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.120</min>
+          <max>3.5</max>
+          <resolution>0.015</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin name="gazebo_ros_lds_lfcd_controller" filename="libgazebo_ros_laser.so">
+        <topicName>/scan</topicName>
+        <frameName>laser_link</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <gazebo reference="camera_link">
+    <sensor type="camera" name="real_sense">
+      <update_rate>30.0</update_rate>
+      <camera name="head">
+        <horizontal_fov>1.3962634</horizontal_fov>
+        <image>
+          <width>800</width>
+          <height>800</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>300</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <!-- Noise is sampled independently per pixel on each frame.
+               That pixel's noise value is added to each of its color
+               channels, which at that point lie in the range [0,1]. -->
+          <mean>0.0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+      <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>0.0</updateRate>
+        <cameraName>tug_robot/real_sense</cameraName>
+        <imageTopicName>tugbot/realsense/image_raw</imageTopicName>
+        <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+        <frameName>camera_link</frameName>
+        <hackBaseline>0.07</hackBaseline>
+        <distortionK1>0.0</distortionK1>
+        <distortionK2>0.0</distortionK2>
+        <distortionK3>0.0</distortionK3>
+        <distortionT1>0.0</distortionT1>
+        <distortionT2>0.0</distortionT2>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+    <gazebo reference="sickcam_link">
+    <sensor type="camera" name="sick_visionary_t_mini">
+      <update_rate>30.0</update_rate>
+      <camera name="head">
+        <horizontal_fov>1.3962634</horizontal_fov>
+        <image>
+          <width>800</width>
+          <height>800</height>
+          <format>R8G8B8</format>
+        </image>
+        <clip>
+          <near>0.02</near>
+          <far>300</far>
+        </clip>
+        <noise>
+          <type>gaussian</type>
+          <!-- Noise is sampled independently per pixel on each frame.
+               That pixel's noise value is added to each of its color
+               channels, which at that point lie in the range [0,1]. -->
+          <mean>0.0</mean>
+          <stddev>0.007</stddev>
+        </noise>
+      </camera>
+      <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+        <alwaysOn>true</alwaysOn>
+        <updateRate>0.0</updateRate>
+        <cameraName>sick_visionary_t_mini</cameraName>
+        <imageTopicName>tug_robot/sick_visionary_t_mini/image_raw</imageTopicName>
+        <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+        <frameName>sickcam_link</frameName>
+        <hackBaseline>0.07</hackBaseline>
+        <distortionK1>0.0</distortionK1>
+        <distortionK2>0.0</distortionK2>
+        <distortionK3>0.0</distortionK3>
+        <distortionT1>0.0</distortionT1>
+        <distortionT2>0.0</distortionT2>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+
+</robot>

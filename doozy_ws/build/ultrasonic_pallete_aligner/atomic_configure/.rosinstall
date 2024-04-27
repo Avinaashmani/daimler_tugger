@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/avinaash/doozy_robotics/doozy_ws/devel/.private/ultrasonic_pallete_aligner/setup.sh

@@ -1,0 +1,1 @@
+/home/avinaash/doozy_robotics/doozy_ws/devel/.private/obstacle_detect/lib/pkgconfig/obstacle_detect.pc

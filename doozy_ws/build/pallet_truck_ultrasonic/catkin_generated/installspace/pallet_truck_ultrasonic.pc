@@ -1,0 +1,8 @@
+prefix=/home/avinaash/doozy_robotics/doozy_ws/install
+
+Name: pallet_truck_ultrasonic
+Description: Description of pallet_truck_ultrasonic
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

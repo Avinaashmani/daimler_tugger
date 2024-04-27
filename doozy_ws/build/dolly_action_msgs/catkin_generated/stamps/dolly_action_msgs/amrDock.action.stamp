@@ -1,0 +1,9 @@
+## Reached Coordinates ##
+
+bool reached_point
+string pallet_idx
+---
+bool docked
+---
+float64 dist_to_pallet
+
