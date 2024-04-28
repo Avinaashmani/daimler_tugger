@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import rospy
 import math
@@ -15,12 +15,12 @@ class DockDolly:
         self.tf_buffer = tf2_ros.Buffer()
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer)
 
-        self.dock_pub = rospy.Publisher('dolly_dock_node', Bool, queue_size=10)
-        self.cmd_pub = rospy.Publisher('cmd_vel', Twist, queue_size=10)
-        rospy.Subscriber('dock_topic', Bool, self.gui_callback)
-        rospy.Subscriber('navigation_topic', Bool, self.navigation_callback)
+        self.dock_pub = rospy.Publisher('/dock_topic', Bool, queue_size=10)
+        self.diagnostics_pub = rospy.Publisher('/dock_diagnostics', String, queue_size=10)
+        self.cmd_pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
+        rospy.Subscriber('navigation_topic', Bool, self.gui_callback)
 
-        self.dolly_frame = ''
+        self.dolly_frame = 'sick_visionary_t_mini'
         self.source_frame = 'map'
         self.tb3_frame = 'base_link'
 
@@ -38,12 +38,13 @@ class DockDolly:
         self.move_tug = Twist()
         self.docking = Bool()
         self.navigate = Bool()
+        self.diagnostics_msg = String()
 
         rospy.Timer(rospy.Duration(0.1), self.dock_func)
 
     def dock_func(self, event):
 
-        if self.navigate_flag and self.dolly_frame != '0':
+        while self.navigate_flag :
             try:
                 tb3_transform = self.tf_buffer.lookup_transform(self.source_frame, self.tb3_frame, rospy.Time())
                 dolly_transform = self.tf_buffer.lookup_transform(self.source_frame, self.dolly_frame, rospy.Time())
@@ -51,7 +52,8 @@ class DockDolly:
 
             except (tf2_ros.LookupException, tf2_ros.ConnectivityException, tf2_ros.ExtrapolationException) as e:
                 rospy.logwarn("LookupException: {0}".format(str(e)))
-                pass
+                rospy.signal_shutdown(self.on_shutdown)
+                
                 
             distance = math.fabs(sqrt(pow(self.dolly_x - self.tb3_x, 2) + pow(self.dolly_y - self.tb3_y, 2)))
             angle_difference = self.dolly_angle_z - self.tb3_angle_z
@@ -65,10 +67,11 @@ class DockDolly:
                 rospy.loginfo(yaw_angle_error)
                 rospy.loginfo("---------------")
 
-                self.docking.docked_to_target = False
-                self.docking.angle_to_target = angle_difference
-                self.docking.distance_to_target = distance
+                self.docking.data = False
                 self.dock_pub.publish(self.docking)
+
+                self.diagnostics_msg.data = "Docking Under Process..."
+                self.diagnostics_pub.publish(self.diagnostics_msg)
 
                 if abs(yaw_angle_error) > 0.15:
                     if abs(angle_difference) > 0.1:
@@ -84,7 +87,9 @@ class DockDolly:
 
             else:
                 rospy.loginfo("Goal Reached")
-                self.docking.docked_to_target = True
+                self.docking.data = True
+                self.diagnostics_msg.data = "<< Docking Complete >>"
+                self.diagnostics_pub.publish(self.diagnostics_msg)
                 self.dock_pub.publish(self.docking)
                 self.cmd_pub.publish(self.move_tug)
                 self.move_tug.linear.x = 0.0
@@ -121,10 +126,6 @@ class DockDolly:
         self.navigate_flag = msg.data
         rospy.loginfo(self.navigate_flag)
 
-    def navigation_callback(self, msg):
-        self.dolly_frame = msg.idx_of_dolly
-        rospy.loginfo(self.dolly_frame)
-
     def euler_from_quaternion(self, x, y, z, w):
         t0 = +2.0 * (w * x + y * z)
         t1 = +1.0 - 2.0 * (x * x + y * y)
@@ -140,6 +141,8 @@ class DockDolly:
         yaw_z = math.atan2(t3, t4)
 
         return yaw_z
+    def on_shutdown(self):
+        rospy.logwarn_once("TF ERROR !")
 
 if __name__ == '__main__':
     try:
