@@ -1,4 +1,4 @@
-prefix=/home/avinaash/doozy_robotics/doozy_ws/devel/.private/pallet_truck_ultrasonic
+prefix=/home/avinaash/daimler_tugger/doozy_ws/devel/.private/pallet_truck_ultrasonic
 
 Name: pallet_truck_ultrasonic
 Description: Description of pallet_truck_ultrasonic

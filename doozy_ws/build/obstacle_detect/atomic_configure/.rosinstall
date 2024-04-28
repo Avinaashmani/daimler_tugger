@@ -1,2 +1,2 @@
 - setup-file:
-    local-name: /home/avinaash/doozy_robotics/doozy_ws/devel/.private/obstacle_detect/setup.sh
+    local-name: /home/avinaash/daimler_tugger/doozy_ws/devel/.private/obstacle_detect/setup.sh

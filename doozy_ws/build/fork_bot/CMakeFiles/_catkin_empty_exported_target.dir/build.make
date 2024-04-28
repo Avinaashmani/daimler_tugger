@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/avinaash/doozy_robotics/doozy_ws/src/fork_bot
+CMAKE_SOURCE_DIR = /home/avinaash/daimler_tugger/doozy_ws/src/fork_bot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/avinaash/doozy_robotics/doozy_ws/build/fork_bot
+CMAKE_BINARY_DIR = /home/avinaash/daimler_tugger/doozy_ws/build/fork_bot
 
 # Utility rule file for _catkin_empty_exported_target.
 
@@ -67,6 +67,6 @@ CMakeFiles/_catkin_empty_exported_target.dir/clean:
 .PHONY : CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 CMakeFiles/_catkin_empty_exported_target.dir/depend:
-	cd /home/avinaash/doozy_robotics/doozy_ws/build/fork_bot && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/avinaash/doozy_robotics/doozy_ws/src/fork_bot /home/avinaash/doozy_robotics/doozy_ws/src/fork_bot /home/avinaash/doozy_robotics/doozy_ws/build/fork_bot /home/avinaash/doozy_robotics/doozy_ws/build/fork_bot /home/avinaash/doozy_robotics/doozy_ws/build/fork_bot/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/avinaash/daimler_tugger/doozy_ws/build/fork_bot && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/avinaash/daimler_tugger/doozy_ws/src/fork_bot /home/avinaash/daimler_tugger/doozy_ws/src/fork_bot /home/avinaash/daimler_tugger/doozy_ws/build/fork_bot /home/avinaash/daimler_tugger/doozy_ws/build/fork_bot /home/avinaash/daimler_tugger/doozy_ws/build/fork_bot/CMakeFiles/_catkin_empty_exported_target.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/_catkin_empty_exported_target.dir/depend
 

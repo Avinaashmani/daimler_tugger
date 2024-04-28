@@ -1,4 +1,4 @@
-prefix=/home/avinaash/doozy_robotics/doozy_ws/devel/.private/amr_bot
+prefix=/home/avinaash/daimler_tugger/doozy_ws/devel/.private/amr_bot
 
 Name: amr_bot
 Description: Description of amr_bot

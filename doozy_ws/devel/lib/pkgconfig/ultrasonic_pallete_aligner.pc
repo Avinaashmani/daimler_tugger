@@ -1,1 +1,1 @@
-/home/avinaash/doozy_robotics/doozy_ws/devel/.private/ultrasonic_pallete_aligner/lib/pkgconfig/ultrasonic_pallete_aligner.pc
+/home/avinaash/daimler_tugger/doozy_ws/devel/.private/ultrasonic_pallete_aligner/lib/pkgconfig/ultrasonic_pallete_aligner.pc

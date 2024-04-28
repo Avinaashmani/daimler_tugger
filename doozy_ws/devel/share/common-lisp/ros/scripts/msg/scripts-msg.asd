@@ -1,0 +1,1 @@
+/home/avinaash/daimler_tugger/doozy_ws/devel/.private/scripts/share/common-lisp/ros/scripts/msg/scripts-msg.asd

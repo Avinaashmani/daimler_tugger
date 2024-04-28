@@ -1,4 +1,4 @@
-prefix=/home/avinaash/doozy_robotics/doozy_ws/devel/.private/tugging_robot_180424_3
+prefix=/home/avinaash/daimler_tugger/doozy_ws/devel/.private/tugging_robot_180424_3
 
 Name: tugging_robot_180424_3
 Description: Description of tugging_robot_180424_3

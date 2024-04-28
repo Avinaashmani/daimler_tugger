@@ -1,4 +1,4 @@
-[33m[1mCMake Warning[0m at /home/avinaash/doozy_robotics/doozy_ws/build/scripts/cmake/scripts-genmsg.cmake:3 (message):
+[33m[1mCMake Warning[0m at /home/avinaash/daimler_tugger/doozy_ws/build/scripts/cmake/scripts-genmsg.cmake:3 (message):
   Invoking generate_messages() without having added any message or service
   file before.
 

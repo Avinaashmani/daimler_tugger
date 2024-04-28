@@ -1,4 +1,4 @@
-prefix=/home/avinaash/doozy_robotics/doozy_ws/devel/.private/obstacle_detect
+prefix=/home/avinaash/daimler_tugger/doozy_ws/devel/.private/obstacle_detect
 
 Name: obstacle_detect
 Description: Description of obstacle_detect

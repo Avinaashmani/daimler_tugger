@@ -1,12 +1,12 @@
 file(REMOVE_RECURSE
-  "/home/avinaash/doozy_robotics/doozy_ws/devel/.private/dolly_action_msgs/lib/python3/dist-packages/dolly_action_msgs/msg/__init__.py"
-  "/home/avinaash/doozy_robotics/doozy_ws/devel/.private/dolly_action_msgs/lib/python3/dist-packages/dolly_action_msgs/msg/_amrDockAction.py"
-  "/home/avinaash/doozy_robotics/doozy_ws/devel/.private/dolly_action_msgs/lib/python3/dist-packages/dolly_action_msgs/msg/_amrDockActionFeedback.py"
-  "/home/avinaash/doozy_robotics/doozy_ws/devel/.private/dolly_action_msgs/lib/python3/dist-packages/dolly_action_msgs/msg/_amrDockActionGoal.py"
-  "/home/avinaash/doozy_robotics/doozy_ws/devel/.private/dolly_action_msgs/lib/python3/dist-packages/dolly_action_msgs/msg/_amrDockActionResult.py"
-  "/home/avinaash/doozy_robotics/doozy_ws/devel/.private/dolly_action_msgs/lib/python3/dist-packages/dolly_action_msgs/msg/_amrDockFeedback.py"
-  "/home/avinaash/doozy_robotics/doozy_ws/devel/.private/dolly_action_msgs/lib/python3/dist-packages/dolly_action_msgs/msg/_amrDockGoal.py"
-  "/home/avinaash/doozy_robotics/doozy_ws/devel/.private/dolly_action_msgs/lib/python3/dist-packages/dolly_action_msgs/msg/_amrDockResult.py"
+  "/home/avinaash/daimler_tugger/doozy_ws/devel/.private/dolly_action_msgs/lib/python3/dist-packages/dolly_action_msgs/msg/__init__.py"
+  "/home/avinaash/daimler_tugger/doozy_ws/devel/.private/dolly_action_msgs/lib/python3/dist-packages/dolly_action_msgs/msg/_amrDockAction.py"
+  "/home/avinaash/daimler_tugger/doozy_ws/devel/.private/dolly_action_msgs/lib/python3/dist-packages/dolly_action_msgs/msg/_amrDockActionFeedback.py"
+  "/home/avinaash/daimler_tugger/doozy_ws/devel/.private/dolly_action_msgs/lib/python3/dist-packages/dolly_action_msgs/msg/_amrDockActionGoal.py"
+  "/home/avinaash/daimler_tugger/doozy_ws/devel/.private/dolly_action_msgs/lib/python3/dist-packages/dolly_action_msgs/msg/_amrDockActionResult.py"
+  "/home/avinaash/daimler_tugger/doozy_ws/devel/.private/dolly_action_msgs/lib/python3/dist-packages/dolly_action_msgs/msg/_amrDockFeedback.py"
+  "/home/avinaash/daimler_tugger/doozy_ws/devel/.private/dolly_action_msgs/lib/python3/dist-packages/dolly_action_msgs/msg/_amrDockGoal.py"
+  "/home/avinaash/daimler_tugger/doozy_ws/devel/.private/dolly_action_msgs/lib/python3/dist-packages/dolly_action_msgs/msg/_amrDockResult.py"
   "CMakeFiles/dolly_action_msgs_generate_messages_py"
 )
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/avinaash/doozy_robotics/doozy_ws/src/scripts
+CMAKE_SOURCE_DIR = /home/avinaash/daimler_tugger/doozy_ws/src/scripts
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/avinaash/doozy_robotics/doozy_ws/build/scripts
+CMAKE_BINARY_DIR = /home/avinaash/daimler_tugger/doozy_ws/build/scripts
 
 # Utility rule file for scripts_gennodejs.
 
@@ -67,6 +67,6 @@ CMakeFiles/scripts_gennodejs.dir/clean:
 .PHONY : CMakeFiles/scripts_gennodejs.dir/clean
 
 CMakeFiles/scripts_gennodejs.dir/depend:
-	cd /home/avinaash/doozy_robotics/doozy_ws/build/scripts && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/avinaash/doozy_robotics/doozy_ws/src/scripts /home/avinaash/doozy_robotics/doozy_ws/src/scripts /home/avinaash/doozy_robotics/doozy_ws/build/scripts /home/avinaash/doozy_robotics/doozy_ws/build/scripts /home/avinaash/doozy_robotics/doozy_ws/build/scripts/CMakeFiles/scripts_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/avinaash/daimler_tugger/doozy_ws/build/scripts && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/avinaash/daimler_tugger/doozy_ws/src/scripts /home/avinaash/daimler_tugger/doozy_ws/src/scripts /home/avinaash/daimler_tugger/doozy_ws/build/scripts /home/avinaash/daimler_tugger/doozy_ws/build/scripts /home/avinaash/daimler_tugger/doozy_ws/build/scripts/CMakeFiles/scripts_gennodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/scripts_gennodejs.dir/depend
 

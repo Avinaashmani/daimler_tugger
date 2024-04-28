@@ -67,14 +67,14 @@ set(tugging_robot_180424_2_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(tugging_robot_180424_2_SOURCE_PREFIX /home/avinaash/doozy_robotics/doozy_ws/src/tugging_robot_180424_2)
-  set(tugging_robot_180424_2_DEVEL_PREFIX /home/avinaash/doozy_robotics/doozy_ws/devel/.private/tugging_robot_180424_2)
+  set(tugging_robot_180424_2_SOURCE_PREFIX /home/avinaash/daimler_tugger/doozy_ws/src/tugging_robot_180424_2)
+  set(tugging_robot_180424_2_DEVEL_PREFIX /home/avinaash/daimler_tugger/doozy_ws/devel/.private/tugging_robot_180424_2)
   set(tugging_robot_180424_2_INSTALL_PREFIX "")
   set(tugging_robot_180424_2_PREFIX ${tugging_robot_180424_2_DEVEL_PREFIX})
 else()
   set(tugging_robot_180424_2_SOURCE_PREFIX "")
   set(tugging_robot_180424_2_DEVEL_PREFIX "")
-  set(tugging_robot_180424_2_INSTALL_PREFIX /home/avinaash/doozy_robotics/doozy_ws/install)
+  set(tugging_robot_180424_2_INSTALL_PREFIX /home/avinaash/daimler_tugger/doozy_ws/install)
   set(tugging_robot_180424_2_PREFIX ${tugging_robot_180424_2_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/avinaash/doozy_robotics/doozy_ws/install/lib;/home/avinaash/doozy_robotics/doozy_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/avinaash/daimler_tugger/doozy_ws/install/lib;/home/avinaash/daimler_tugger/doozy_ws/devel/lib;/home/avinaash/doozy_robotics/doozy_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

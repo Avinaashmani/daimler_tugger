@@ -1,1 +1,1 @@
-/home/avinaash/doozy_robotics/doozy_ws/devel/.private/scripts/share/scripts/cmake/scripts-msg-paths.cmake
+/home/avinaash/daimler_tugger/doozy_ws/devel/.private/scripts/share/scripts/cmake/scripts-msg-paths.cmake

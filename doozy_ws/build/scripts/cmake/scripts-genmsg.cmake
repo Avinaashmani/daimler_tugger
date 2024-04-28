@@ -1,10 +1,8 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(WARNING "Invoking generate_messages() without having added any message or service file before.
-You should either add add_message_files() and/or add_service_files() calls or remove the invocation of generate_messages().")
-message(STATUS "scripts: 0 messages, 0 services")
+message(STATUS "scripts: 1 messages, 0 services")
 
-set(MSG_I_FLAGS "-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Iscripts:/home/avinaash/daimler_tugger/doozy_ws/src/scripts/msg;-Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg;-Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -19,12 +17,23 @@ add_custom_target(scripts_generate_messages ALL)
 
 
 
+get_filename_component(_filename "/home/avinaash/daimler_tugger/doozy_ws/src/scripts/msg/SickTMini.msg" NAME_WE)
+add_custom_target(_scripts_generate_messages_check_deps_${_filename}
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "scripts" "/home/avinaash/daimler_tugger/doozy_ws/src/scripts/msg/SickTMini.msg" "geometry_msgs/Vector3:std_msgs/Header"
+)
+
 #
 #  langs = gencpp;geneus;genlisp;gennodejs;genpy
 #
 
 ### Section generating for lang: gencpp
 ### Generating Messages
+_generate_msg_cpp(scripts
+  "/home/avinaash/daimler_tugger/doozy_ws/src/scripts/msg/SickTMini.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/scripts
+)
 
 ### Generating Services
 
@@ -40,6 +49,8 @@ add_custom_target(scripts_generate_messages_cpp
 add_dependencies(scripts_generate_messages scripts_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/avinaash/daimler_tugger/doozy_ws/src/scripts/msg/SickTMini.msg" NAME_WE)
+add_dependencies(scripts_generate_messages_cpp _scripts_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(scripts_gencpp)
@@ -50,6 +61,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS scripts_generate_messages_cpp)
 
 ### Section generating for lang: geneus
 ### Generating Messages
+_generate_msg_eus(scripts
+  "/home/avinaash/daimler_tugger/doozy_ws/src/scripts/msg/SickTMini.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/scripts
+)
 
 ### Generating Services
 
@@ -65,6 +82,8 @@ add_custom_target(scripts_generate_messages_eus
 add_dependencies(scripts_generate_messages scripts_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/avinaash/daimler_tugger/doozy_ws/src/scripts/msg/SickTMini.msg" NAME_WE)
+add_dependencies(scripts_generate_messages_eus _scripts_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(scripts_geneus)
@@ -75,6 +94,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS scripts_generate_messages_eus)
 
 ### Section generating for lang: genlisp
 ### Generating Messages
+_generate_msg_lisp(scripts
+  "/home/avinaash/daimler_tugger/doozy_ws/src/scripts/msg/SickTMini.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/scripts
+)
 
 ### Generating Services
 
@@ -90,6 +115,8 @@ add_custom_target(scripts_generate_messages_lisp
 add_dependencies(scripts_generate_messages scripts_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/avinaash/daimler_tugger/doozy_ws/src/scripts/msg/SickTMini.msg" NAME_WE)
+add_dependencies(scripts_generate_messages_lisp _scripts_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(scripts_genlisp)
@@ -100,6 +127,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS scripts_generate_messages_lisp)
 
 ### Section generating for lang: gennodejs
 ### Generating Messages
+_generate_msg_nodejs(scripts
+  "/home/avinaash/daimler_tugger/doozy_ws/src/scripts/msg/SickTMini.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/scripts
+)
 
 ### Generating Services
 
@@ -115,6 +148,8 @@ add_custom_target(scripts_generate_messages_nodejs
 add_dependencies(scripts_generate_messages scripts_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/avinaash/daimler_tugger/doozy_ws/src/scripts/msg/SickTMini.msg" NAME_WE)
+add_dependencies(scripts_generate_messages_nodejs _scripts_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(scripts_gennodejs)
@@ -125,6 +160,12 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS scripts_generate_messages_nodejs)
 
 ### Section generating for lang: genpy
 ### Generating Messages
+_generate_msg_py(scripts
+  "/home/avinaash/daimler_tugger/doozy_ws/src/scripts/msg/SickTMini.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/noetic/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/noetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/scripts
+)
 
 ### Generating Services
 
@@ -140,6 +181,8 @@ add_custom_target(scripts_generate_messages_py
 add_dependencies(scripts_generate_messages scripts_generate_messages_py)
 
 # add dependencies to all check dependencies targets
+get_filename_component(_filename "/home/avinaash/daimler_tugger/doozy_ws/src/scripts/msg/SickTMini.msg" NAME_WE)
+add_dependencies(scripts_generate_messages_py _scripts_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
 add_custom_target(scripts_genpy)

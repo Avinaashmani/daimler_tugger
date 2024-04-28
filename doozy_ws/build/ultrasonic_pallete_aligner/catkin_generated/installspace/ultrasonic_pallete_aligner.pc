@@ -1,4 +1,4 @@
-prefix=/home/avinaash/doozy_robotics/doozy_ws/install
+prefix=/home/avinaash/daimler_tugger/doozy_ws/install
 
 Name: ultrasonic_pallete_aligner
 Description: Description of ultrasonic_pallete_aligner

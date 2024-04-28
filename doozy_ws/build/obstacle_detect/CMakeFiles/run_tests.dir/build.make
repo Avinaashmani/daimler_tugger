@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/avinaash/doozy_robotics/doozy_ws/src/obstacle_detect
+CMAKE_SOURCE_DIR = /home/avinaash/daimler_tugger/doozy_ws/src/obstacle_detect
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/avinaash/doozy_robotics/doozy_ws/build/obstacle_detect
+CMAKE_BINARY_DIR = /home/avinaash/daimler_tugger/doozy_ws/build/obstacle_detect
 
 # Utility rule file for run_tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/avinaash/doozy_robotics/doozy_ws/build/obstacle_detect && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/avinaash/doozy_robotics/doozy_ws/src/obstacle_detect /home/avinaash/doozy_robotics/doozy_ws/src/obstacle_detect /home/avinaash/doozy_robotics/doozy_ws/build/obstacle_detect /home/avinaash/doozy_robotics/doozy_ws/build/obstacle_detect /home/avinaash/doozy_robotics/doozy_ws/build/obstacle_detect/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/avinaash/daimler_tugger/doozy_ws/build/obstacle_detect && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/avinaash/daimler_tugger/doozy_ws/src/obstacle_detect /home/avinaash/daimler_tugger/doozy_ws/src/obstacle_detect /home/avinaash/daimler_tugger/doozy_ws/build/obstacle_detect /home/avinaash/daimler_tugger/doozy_ws/build/obstacle_detect /home/avinaash/daimler_tugger/doozy_ws/build/obstacle_detect/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 

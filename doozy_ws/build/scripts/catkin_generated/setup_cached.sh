@@ -7,7 +7,10 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/avinaash/doozy_robotics/doozy_ws/devel/.private/scripts:$CMAKE_PREFIX_PATH"
-export PWD='/home/avinaash/doozy_robotics/doozy_ws/build/scripts'
-export ROSLISP_PACKAGE_DIRECTORIES="/home/avinaash/doozy_robotics/doozy_ws/devel/.private/scripts/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/avinaash/doozy_robotics/doozy_ws/src/scripts:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/avinaash/daimler_tugger/doozy_ws/devel/.private/scripts:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/avinaash/daimler_tugger/doozy_ws/devel/.private/scripts/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/avinaash/daimler_tugger/doozy_ws/devel/.private/scripts/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD='/home/avinaash/daimler_tugger/doozy_ws/build/scripts'
+export PYTHONPATH="/home/avinaash/daimler_tugger/doozy_ws/devel/.private/scripts/lib/python3/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/avinaash/daimler_tugger/doozy_ws/devel/.private/scripts/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
+export ROS_PACKAGE_PATH="/home/avinaash/daimler_tugger/doozy_ws/src/scripts:$ROS_PACKAGE_PATH"

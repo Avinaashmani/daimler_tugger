@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/avinaash/doozy_robotics/doozy_ws/build/scripts/CMakeFiles/CMakeTmp
+Change Dir: /home/avinaash/daimler_tugger/doozy_ws/build/scripts/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_2a085/fast && /usr/bin/make -f CMakeFiles/cmTC_2a085.dir/build.make CMakeFiles/cmTC_2a085.dir/build
-make[1]: Entering directory '/home/avinaash/doozy_robotics/doozy_ws/build/scripts/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_2a085.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_2a085.dir/src.c.o   -c /home/avinaash/doozy_robotics/doozy_ws/build/scripts/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_2a085
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2a085.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_2a085.dir/src.c.o  -o cmTC_2a085 
-/usr/bin/ld: CMakeFiles/cmTC_2a085.dir/src.c.o: in function `main':
+Run Build Command(s):/usr/bin/make cmTC_7a9f3/fast && /usr/bin/make -f CMakeFiles/cmTC_7a9f3.dir/build.make CMakeFiles/cmTC_7a9f3.dir/build
+make[1]: Entering directory '/home/avinaash/daimler_tugger/doozy_ws/build/scripts/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7a9f3.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_7a9f3.dir/src.c.o   -c /home/avinaash/daimler_tugger/doozy_ws/build/scripts/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_7a9f3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7a9f3.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_7a9f3.dir/src.c.o  -o cmTC_7a9f3 
+/usr/bin/ld: CMakeFiles/cmTC_7a9f3.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_2a085.dir/build.make:87: cmTC_2a085] Error 1
-make[1]: Leaving directory '/home/avinaash/doozy_robotics/doozy_ws/build/scripts/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_2a085/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_7a9f3.dir/build.make:87: cmTC_7a9f3] Error 1
+make[1]: Leaving directory '/home/avinaash/daimler_tugger/doozy_ws/build/scripts/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_7a9f3/fast] Error 2
 
 
 Source file was:
@@ -39,20 +39,20 @@ int main(void)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/avinaash/doozy_robotics/doozy_ws/build/scripts/CMakeFiles/CMakeTmp
+Change Dir: /home/avinaash/daimler_tugger/doozy_ws/build/scripts/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_3e812/fast && /usr/bin/make -f CMakeFiles/cmTC_3e812.dir/build.make CMakeFiles/cmTC_3e812.dir/build
-make[1]: Entering directory '/home/avinaash/doozy_robotics/doozy_ws/build/scripts/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_3e812.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_3e812.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_3e812
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e812.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_3e812.dir/CheckFunctionExists.c.o  -o cmTC_3e812  -lpthreads 
+Run Build Command(s):/usr/bin/make cmTC_7e128/fast && /usr/bin/make -f CMakeFiles/cmTC_7e128.dir/build.make CMakeFiles/cmTC_7e128.dir/build
+make[1]: Entering directory '/home/avinaash/daimler_tugger/doozy_ws/build/scripts/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7e128.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_7e128.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7e128
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e128.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_7e128.dir/CheckFunctionExists.c.o  -o cmTC_7e128  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_3e812.dir/build.make:87: cmTC_3e812] Error 1
-make[1]: Leaving directory '/home/avinaash/doozy_robotics/doozy_ws/build/scripts/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_3e812/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_7e128.dir/build.make:87: cmTC_7e128] Error 1
+make[1]: Leaving directory '/home/avinaash/daimler_tugger/doozy_ws/build/scripts/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_7e128/fast] Error 2
 
 
 

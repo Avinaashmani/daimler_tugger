@@ -1,4 +1,4 @@
-prefix=/home/avinaash/doozy_robotics/doozy_ws/devel/.private/catkin_tools_prebuild
+prefix=/home/avinaash/daimler_tugger/doozy_ws/devel/.private/catkin_tools_prebuild
 
 Name: catkin_tools_prebuild
 Description: Description of catkin_tools_prebuild

@@ -1,1 +1,1 @@
-/home/avinaash/doozy_robotics/doozy_ws/devel/.private/catkin_tools_prebuild/setup.zsh
+/home/avinaash/daimler_tugger/doozy_ws/devel/.private/catkin_tools_prebuild/setup.zsh

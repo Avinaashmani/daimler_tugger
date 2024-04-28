@@ -1,1 +1,1 @@
-/home/avinaash/doozy_robotics/doozy_ws/devel/.private/scripts/share/roseus/ros/scripts/manifest.l
+/home/avinaash/daimler_tugger/doozy_ws/devel/.private/scripts/share/roseus/ros/scripts/manifest.l

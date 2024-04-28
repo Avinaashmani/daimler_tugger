@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/avinaash/doozy_robotics/doozy_ws/src/dolly_action_msgs
+CMAKE_SOURCE_DIR = /home/avinaash/daimler_tugger/doozy_ws/src/dolly_action_msgs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/avinaash/doozy_robotics/doozy_ws/build/dolly_action_msgs
+CMAKE_BINARY_DIR = /home/avinaash/daimler_tugger/doozy_ws/build/dolly_action_msgs
 
 # Utility rule file for dolly_action_msgs_generate_messages.
 
@@ -67,6 +67,6 @@ CMakeFiles/dolly_action_msgs_generate_messages.dir/clean:
 .PHONY : CMakeFiles/dolly_action_msgs_generate_messages.dir/clean
 
 CMakeFiles/dolly_action_msgs_generate_messages.dir/depend:
-	cd /home/avinaash/doozy_robotics/doozy_ws/build/dolly_action_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/avinaash/doozy_robotics/doozy_ws/src/dolly_action_msgs /home/avinaash/doozy_robotics/doozy_ws/src/dolly_action_msgs /home/avinaash/doozy_robotics/doozy_ws/build/dolly_action_msgs /home/avinaash/doozy_robotics/doozy_ws/build/dolly_action_msgs /home/avinaash/doozy_robotics/doozy_ws/build/dolly_action_msgs/CMakeFiles/dolly_action_msgs_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/avinaash/daimler_tugger/doozy_ws/build/dolly_action_msgs && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/avinaash/daimler_tugger/doozy_ws/src/dolly_action_msgs /home/avinaash/daimler_tugger/doozy_ws/src/dolly_action_msgs /home/avinaash/daimler_tugger/doozy_ws/build/dolly_action_msgs /home/avinaash/daimler_tugger/doozy_ws/build/dolly_action_msgs /home/avinaash/daimler_tugger/doozy_ws/build/dolly_action_msgs/CMakeFiles/dolly_action_msgs_generate_messages.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dolly_action_msgs_generate_messages.dir/depend
 

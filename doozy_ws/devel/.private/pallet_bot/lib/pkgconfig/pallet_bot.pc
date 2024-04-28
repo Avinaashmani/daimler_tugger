@@ -1,4 +1,4 @@
-prefix=/home/avinaash/doozy_robotics/doozy_ws/devel/.private/pallet_bot
+prefix=/home/avinaash/daimler_tugger/doozy_ws/devel/.private/pallet_bot
 
 Name: pallet_bot
 Description: Description of pallet_bot

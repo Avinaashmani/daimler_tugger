@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/avinaash/doozy_robotics/doozy_ws/src/tugging_robot_180424_4
+CMAKE_SOURCE_DIR = /home/avinaash/daimler_tugger/doozy_ws/src/tugging_robot_180424_4
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/avinaash/doozy_robotics/doozy_ws/build/tugging_robot_180424_4
+CMAKE_BINARY_DIR = /home/avinaash/daimler_tugger/doozy_ws/build/tugging_robot_180424_4
 
 # Utility rule file for doxygen.
 
@@ -67,6 +67,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/avinaash/doozy_robotics/doozy_ws/build/tugging_robot_180424_4 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/avinaash/doozy_robotics/doozy_ws/src/tugging_robot_180424_4 /home/avinaash/doozy_robotics/doozy_ws/src/tugging_robot_180424_4 /home/avinaash/doozy_robotics/doozy_ws/build/tugging_robot_180424_4 /home/avinaash/doozy_robotics/doozy_ws/build/tugging_robot_180424_4 /home/avinaash/doozy_robotics/doozy_ws/build/tugging_robot_180424_4/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/avinaash/daimler_tugger/doozy_ws/build/tugging_robot_180424_4 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/avinaash/daimler_tugger/doozy_ws/src/tugging_robot_180424_4 /home/avinaash/daimler_tugger/doozy_ws/src/tugging_robot_180424_4 /home/avinaash/daimler_tugger/doozy_ws/build/tugging_robot_180424_4 /home/avinaash/daimler_tugger/doozy_ws/build/tugging_robot_180424_4 /home/avinaash/daimler_tugger/doozy_ws/build/tugging_robot_180424_4/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 

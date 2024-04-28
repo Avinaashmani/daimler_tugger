@@ -1,0 +1,7 @@
+[31m[1mCMake Error[0m at /opt/ros/noetic/share/genmsg/cmake/genmsg-extras.cmake:77 (message):
+  add_message_files() called with unused arguments: sick_visionary_t_mini.msg
+[36mCall Stack (most recent call first):[0m
+  CMakeLists.txt:52 (add_message_files)
+
+
+make: *** [Makefile:600: cmake_check_build_system] Error 1

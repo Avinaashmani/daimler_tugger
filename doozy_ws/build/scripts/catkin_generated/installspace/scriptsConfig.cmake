@@ -67,14 +67,14 @@ set(scripts_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(scripts_SOURCE_PREFIX /home/avinaash/doozy_robotics/doozy_ws/src/scripts)
-  set(scripts_DEVEL_PREFIX /home/avinaash/doozy_robotics/doozy_ws/devel/.private/scripts)
+  set(scripts_SOURCE_PREFIX /home/avinaash/daimler_tugger/doozy_ws/src/scripts)
+  set(scripts_DEVEL_PREFIX /home/avinaash/daimler_tugger/doozy_ws/devel/.private/scripts)
   set(scripts_INSTALL_PREFIX "")
   set(scripts_PREFIX ${scripts_DEVEL_PREFIX})
 else()
   set(scripts_SOURCE_PREFIX "")
   set(scripts_DEVEL_PREFIX "")
-  set(scripts_INSTALL_PREFIX /home/avinaash/doozy_robotics/doozy_ws/install)
+  set(scripts_INSTALL_PREFIX /home/avinaash/daimler_tugger/doozy_ws/install)
   set(scripts_PREFIX ${scripts_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(scripts_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT " " STREQUAL " ")
+if(NOT "include " STREQUAL " ")
   set(scripts_INCLUDE_DIRS "")
-  set(_include_dirs "")
+  set(_include_dirs "include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT " " STREQUAL " ")
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/avinaash/doozy_robotics/doozy_ws/install/lib;/home/avinaash/doozy_robotics/doozy_ws/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/avinaash/daimler_tugger/doozy_ws/install/lib;/home/avinaash/daimler_tugger/doozy_ws/devel/lib;/home/avinaash/doozy_robotics/doozy_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
