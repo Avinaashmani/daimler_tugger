@@ -85,8 +85,6 @@ class Latch_Unlatch(Node):
                 time.sleep(3)
                     
                 msg_read_tug = self.arduino_nano_1.readline().decode().strip()
-            
-                self.arm_reset = False
 
                 self.diagnostic_msg.data = "Navigation Complete...Turning Arm :)"
                 self.diagnostics_msg_pub.publish(self.diagnostic_msg)
@@ -151,7 +149,7 @@ class Latch_Unlatch(Node):
             print(e)
             
     def undock_compute(self):
-        
+        pass
 
     def navigation_callback(self, msg):
         self.navigation_flag = msg.data

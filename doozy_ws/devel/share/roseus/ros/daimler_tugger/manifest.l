@@ -1,0 +1,1 @@
+/home/avinaash/daimler_tugger/doozy_ws/devel/.private/daimler_tugger/share/roseus/ros/daimler_tugger/manifest.l

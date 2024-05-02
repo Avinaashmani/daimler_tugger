@@ -5,6 +5,7 @@ import math
 import tf2_ros
 from math import sqrt, pow, atan2
 from std_msgs.msg import Bool, String
+from move_base_msgs.msg import MoveBaseActionResult
 from geometry_msgs.msg import Twist
 
 class DockDolly:
@@ -18,9 +19,9 @@ class DockDolly:
         self.dock_pub = rospy.Publisher('/dock_topic', Bool, queue_size=10)
         self.diagnostics_pub = rospy.Publisher('/dock_diagnostics', String, queue_size=10)
         self.cmd_pub = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
-        rospy.Subscriber('navigation_topic', Bool, self.gui_callback)
+        rospy.Subscriber('/start_docking',Bool, self.goal_callback)
 
-        self.dolly_frame = 'sick_visionary_t_mini'
+        self.dolly_frame = 'dolly_01'
         self.source_frame = 'map'
         self.tb3_frame = 'base_link'
 
@@ -122,9 +123,12 @@ class DockDolly:
         self.dolly_angle_z = self.euler_from_quaternion(dolly_angle_x, dolly_angle_y, 
                                                         dolly_angle_z, dolly_angle_w)
         
-    def gui_callback(self, msg):
-        self.navigate_flag = msg.data
-        rospy.loginfo(self.navigate_flag)
+    def goal_callback(self, msg):
+        if msg:
+
+            self.navigate_flag = True
+        else:
+            self.navigate_flag = False
 
     def euler_from_quaternion(self, x, y, z, w):
         t0 = +2.0 * (w * x + y * z)

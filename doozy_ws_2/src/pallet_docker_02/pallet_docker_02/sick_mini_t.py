@@ -75,7 +75,7 @@ class Dolly_Identify(Node):
             print(f"X point ==> {x_point}")
             print(f"Y point ==> {y_point}")
             print(f"Z point ==> {z_point}")
-            self.sick_vision_t_mini_pub.publish(self.sick_mini_t)
+            self.sick_vision_t_mini_pub.publish()
 
 def main():
     rclpy.init()

@@ -1,0 +1,5 @@
+<launch>
+
+    <node name="sick_visionary_t_mini_01" pkg="daimler_tugger" type="sick_visionary_t_mini_01.py" output="screen" />
+    <node name="tf_bradcaster" pkg="daimler_tugger" type="tf_broadcaster_01.py" output="screen"/>
+</launch>
