@@ -1,0 +1,28 @@
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target _dolly_action_msgs_generate_messages_check_deps_amrDockActionGoal
+[  0%] Built target _dolly_action_msgs_generate_messages_check_deps_amrDockFeedback
+[  0%] Built target _dolly_action_msgs_generate_messages_check_deps_amrDockActionResult
+[  0%] Built target _dolly_action_msgs_generate_messages_check_deps_amrDockActionFeedback
+[  0%] Built target _dolly_action_msgs_generate_messages_check_deps_amrDockGoal
+[  0%] Built target _dolly_action_msgs_generate_messages_check_deps_amrDockAction
+[  0%] Built target _dolly_action_msgs_generate_messages_check_deps_amrDockResult
+[ 70%] Built target dolly_action_msgs_generate_messages_nodejs
+[ 75%] Built target dolly_action_msgs_generate_messages_cpp
+[ 75%] Built target dolly_action_msgs_generate_messages_lisp
+[ 78%] Built target dolly_action_msgs_generate_messages_eus
+[100%] Built target dolly_action_msgs_generate_messages_py
+[100%] Built target dolly_action_msgs_generate_messages

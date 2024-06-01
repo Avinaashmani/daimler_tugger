@@ -1,23 +1,17 @@
-[  0%] Built target std_msgs_generate_messages_lisp
-[  0%] Built target std_msgs_generate_messages_eus
 [  0%] Built target std_msgs_generate_messages_cpp
-[  0%] Built target geometry_msgs_generate_messages_cpp
-[  0%] Built target geometry_msgs_generate_messages_py
 [  0%] Built target geometry_msgs_generate_messages_lisp
-[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target geometry_msgs_generate_messages_nodejs
 [  0%] Built target std_msgs_generate_messages_py
 [  0%] Built target std_msgs_generate_messages_nodejs
-[  0%] Built target geometry_msgs_generate_messages_nodejs
-[  0%] Built target _daimler_tugger_generate_messages_check_deps_daimler_service_call
-[ 14%] [34m[1mGenerating EusLisp code from daimler_tugger/daimler_service_call.srv[0m
-[ 28%] [34m[1mGenerating Python code from SRV daimler_tugger/daimler_service_call[0m
-[ 42%] [34m[1mGenerating C++ code from daimler_tugger/daimler_service_call.srv[0m
-[ 57%] [34m[1mGenerating Javascript code from daimler_tugger/daimler_service_call.srv[0m
-[ 71%] [34m[1mGenerating Lisp code from daimler_tugger/daimler_service_call.srv[0m
-[ 71%] Built target daimler_tugger_generate_messages_nodejs
-[ 71%] Built target daimler_tugger_generate_messages_lisp
-[ 85%] Built target daimler_tugger_generate_messages_eus
-[ 85%] Built target daimler_tugger_generate_messages_cpp
-[100%] [34m[1mGenerating Python srv __init__.py for daimler_tugger[0m
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target _daimler_tugger_generate_messages_check_deps_DaimlerServiceCall
+[ 42%] Built target daimler_tugger_generate_messages_lisp
+[ 42%] Built target daimler_tugger_generate_messages_nodejs
+[ 42%] Built target daimler_tugger_generate_messages_cpp
+[ 71%] Built target daimler_tugger_generate_messages_eus
 [100%] Built target daimler_tugger_generate_messages_py
 [100%] Built target daimler_tugger_generate_messages

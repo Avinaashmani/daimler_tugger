@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/avinaash/daimler_tugger/doozy_ws/build/tugging_robot_180424_2/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_d2531/fast && /usr/bin/make -f CMakeFiles/cmTC_d2531.dir/build.make CMakeFiles/cmTC_d2531.dir/build
+Run Build Command(s):/usr/bin/make cmTC_f3a5a/fast && /usr/bin/make -f CMakeFiles/cmTC_f3a5a.dir/build.make CMakeFiles/cmTC_f3a5a.dir/build
 make[1]: Entering directory '/home/avinaash/daimler_tugger/doozy_ws/build/tugging_robot_180424_2/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_d2531.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_d2531.dir/src.c.o   -c /home/avinaash/daimler_tugger/doozy_ws/build/tugging_robot_180424_2/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_d2531
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2531.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_d2531.dir/src.c.o  -o cmTC_d2531 
-/usr/bin/ld: CMakeFiles/cmTC_d2531.dir/src.c.o: in function `main':
+Building C object CMakeFiles/cmTC_f3a5a.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_f3a5a.dir/src.c.o   -c /home/avinaash/daimler_tugger/doozy_ws/build/tugging_robot_180424_2/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_f3a5a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3a5a.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_f3a5a.dir/src.c.o  -o cmTC_f3a5a 
+/usr/bin/ld: CMakeFiles/cmTC_f3a5a.dir/src.c.o: in function `main':
 src.c:(.text+0x46): undefined reference to `pthread_create'
 /usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
 /usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_d2531.dir/build.make:87: cmTC_d2531] Error 1
+make[1]: *** [CMakeFiles/cmTC_f3a5a.dir/build.make:87: cmTC_f3a5a] Error 1
 make[1]: Leaving directory '/home/avinaash/daimler_tugger/doozy_ws/build/tugging_robot_180424_2/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_d2531/fast] Error 2
+make: *** [Makefile:121: cmTC_f3a5a/fast] Error 2
 
 
 Source file was:
@@ -41,18 +41,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/avinaash/daimler_tugger/doozy_ws/build/tugging_robot_180424_2/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_f746f/fast && /usr/bin/make -f CMakeFiles/cmTC_f746f.dir/build.make CMakeFiles/cmTC_f746f.dir/build
+Run Build Command(s):/usr/bin/make cmTC_fdae4/fast && /usr/bin/make -f CMakeFiles/cmTC_fdae4.dir/build.make CMakeFiles/cmTC_fdae4.dir/build
 make[1]: Entering directory '/home/avinaash/daimler_tugger/doozy_ws/build/tugging_robot_180424_2/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_f746f.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_f746f.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_f746f
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f746f.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_f746f.dir/CheckFunctionExists.c.o  -o cmTC_f746f  -lpthreads 
+Building C object CMakeFiles/cmTC_fdae4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_fdae4.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fdae4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fdae4.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_fdae4.dir/CheckFunctionExists.c.o  -o cmTC_fdae4  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_f746f.dir/build.make:87: cmTC_f746f] Error 1
+make[1]: *** [CMakeFiles/cmTC_fdae4.dir/build.make:87: cmTC_fdae4] Error 1
 make[1]: Leaving directory '/home/avinaash/daimler_tugger/doozy_ws/build/tugging_robot_180424_2/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_f746f/fast] Error 2
+make: *** [Makefile:121: cmTC_fdae4/fast] Error 2
 
 
 

@@ -1,1 +1,0 @@
-/home/avinaash/daimler_tugger/doozy_ws/devel/.private/daimler_tugger/share/gennodejs/ros/daimler_tugger/srv/daimler_service_call.js
