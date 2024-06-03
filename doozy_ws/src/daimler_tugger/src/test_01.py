@@ -18,7 +18,7 @@ class TugArm():
         self.arduino_port = '/dev/ttyUSB0'
         self.baud_rate = 9600
         self.set_bool = SetBool()
-
+        rospy.on_shutdown(self.on_shutdown_cb)
         try:
             rospy.Service('turn_tug', SetBool, self.tug_srv_callback)
         
@@ -60,6 +60,7 @@ class TugArm():
 
     def on_shutdown_cb(self):
         rospy.loginfo("Exiting")
+        self.arduino_open.close()
 
 def main():
     # while not rospy.is_shutdown():

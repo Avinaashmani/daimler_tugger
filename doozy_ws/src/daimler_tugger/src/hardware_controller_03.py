@@ -230,6 +230,7 @@ class ArduinoController:
             self.navigation_ = True
         else:
             self.navigation_ = False
+            
         rospy.logwarn_once(f"Navigation... {msg.data}")
 
     def docking_callback(self, msg):
