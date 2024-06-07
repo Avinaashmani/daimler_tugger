@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: daimler_tugger
+Description: Description of daimler_tugger
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

@@ -4,8 +4,8 @@
 
 #include "cstddef"
 #include "rosidl_runtime_c/message_type_support_struct.h"
+#include "doozy_actions/msg/rosidl_typesupport_c__visibility_control.h"
 #include "doozy_actions/action/detail/dolly_dock__struct.h"
-#include "doozy_actions/action/detail/dolly_dock__type_support.h"
 #include "rosidl_typesupport_c/identifier.h"
 #include "rosidl_typesupport_c/message_type_support_dispatch.h"
 #include "rosidl_typesupport_c/type_support_map.h"
@@ -85,6 +85,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_doozy_actions
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, doozy_actions, action, DollyDock_Goal)() {
   return &::doozy_actions::action::rosidl_typesupport_c::DollyDock_Goal_message_type_support_handle;
@@ -99,9 +100,9 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, doozy_ac
 // already included above
 // #include "rosidl_runtime_c/message_type_support_struct.h"
 // already included above
-// #include "doozy_actions/action/detail/dolly_dock__struct.h"
+// #include "doozy_actions/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
-// #include "doozy_actions/action/detail/dolly_dock__type_support.h"
+// #include "doozy_actions/action/detail/dolly_dock__struct.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -186,6 +187,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_doozy_actions
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, doozy_actions, action, DollyDock_Result)() {
   return &::doozy_actions::action::rosidl_typesupport_c::DollyDock_Result_message_type_support_handle;
@@ -200,9 +202,9 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, doozy_ac
 // already included above
 // #include "rosidl_runtime_c/message_type_support_struct.h"
 // already included above
-// #include "doozy_actions/action/detail/dolly_dock__struct.h"
+// #include "doozy_actions/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
-// #include "doozy_actions/action/detail/dolly_dock__type_support.h"
+// #include "doozy_actions/action/detail/dolly_dock__struct.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -287,6 +289,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_doozy_actions
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, doozy_actions, action, DollyDock_Feedback)() {
   return &::doozy_actions::action::rosidl_typesupport_c::DollyDock_Feedback_message_type_support_handle;
@@ -301,9 +304,9 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, doozy_ac
 // already included above
 // #include "rosidl_runtime_c/message_type_support_struct.h"
 // already included above
-// #include "doozy_actions/action/detail/dolly_dock__struct.h"
+// #include "doozy_actions/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
-// #include "doozy_actions/action/detail/dolly_dock__type_support.h"
+// #include "doozy_actions/action/detail/dolly_dock__struct.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -388,6 +391,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_doozy_actions
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, doozy_actions, action, DollyDock_SendGoal_Request)() {
   return &::doozy_actions::action::rosidl_typesupport_c::DollyDock_SendGoal_Request_message_type_support_handle;
@@ -402,9 +406,9 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, doozy_ac
 // already included above
 // #include "rosidl_runtime_c/message_type_support_struct.h"
 // already included above
-// #include "doozy_actions/action/detail/dolly_dock__struct.h"
+// #include "doozy_actions/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
-// #include "doozy_actions/action/detail/dolly_dock__type_support.h"
+// #include "doozy_actions/action/detail/dolly_dock__struct.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -489,6 +493,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_doozy_actions
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, doozy_actions, action, DollyDock_SendGoal_Response)() {
   return &::doozy_actions::action::rosidl_typesupport_c::DollyDock_SendGoal_Response_message_type_support_handle;
@@ -502,7 +507,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, doozy_ac
 // #include "cstddef"
 #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
-// #include "doozy_actions/action/detail/dolly_dock__type_support.h"
+// #include "doozy_actions/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 #include "rosidl_typesupport_c/service_type_support_dispatch.h"
@@ -584,6 +589,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_doozy_actions
 const rosidl_service_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, doozy_actions, action, DollyDock_SendGoal)() {
   return &::doozy_actions::action::rosidl_typesupport_c::DollyDock_SendGoal_service_type_support_handle;
@@ -598,9 +604,9 @@ ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, doozy_ac
 // already included above
 // #include "rosidl_runtime_c/message_type_support_struct.h"
 // already included above
-// #include "doozy_actions/action/detail/dolly_dock__struct.h"
+// #include "doozy_actions/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
-// #include "doozy_actions/action/detail/dolly_dock__type_support.h"
+// #include "doozy_actions/action/detail/dolly_dock__struct.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -685,6 +691,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_doozy_actions
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, doozy_actions, action, DollyDock_GetResult_Request)() {
   return &::doozy_actions::action::rosidl_typesupport_c::DollyDock_GetResult_Request_message_type_support_handle;
@@ -699,9 +706,9 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, doozy_ac
 // already included above
 // #include "rosidl_runtime_c/message_type_support_struct.h"
 // already included above
-// #include "doozy_actions/action/detail/dolly_dock__struct.h"
+// #include "doozy_actions/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
-// #include "doozy_actions/action/detail/dolly_dock__type_support.h"
+// #include "doozy_actions/action/detail/dolly_dock__struct.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -786,6 +793,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_doozy_actions
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, doozy_actions, action, DollyDock_GetResult_Response)() {
   return &::doozy_actions::action::rosidl_typesupport_c::DollyDock_GetResult_Response_message_type_support_handle;
@@ -800,7 +808,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, doozy_ac
 // already included above
 // #include "rosidl_runtime_c/service_type_support_struct.h"
 // already included above
-// #include "doozy_actions/action/detail/dolly_dock__type_support.h"
+// #include "doozy_actions/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -883,6 +891,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_doozy_actions
 const rosidl_service_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, doozy_actions, action, DollyDock_GetResult)() {
   return &::doozy_actions::action::rosidl_typesupport_c::DollyDock_GetResult_service_type_support_handle;
@@ -897,9 +906,9 @@ ROSIDL_TYPESUPPORT_INTERFACE__SERVICE_SYMBOL_NAME(rosidl_typesupport_c, doozy_ac
 // already included above
 // #include "rosidl_runtime_c/message_type_support_struct.h"
 // already included above
-// #include "doozy_actions/action/detail/dolly_dock__struct.h"
+// #include "doozy_actions/msg/rosidl_typesupport_c__visibility_control.h"
 // already included above
-// #include "doozy_actions/action/detail/dolly_dock__type_support.h"
+// #include "doozy_actions/action/detail/dolly_dock__struct.h"
 // already included above
 // #include "rosidl_typesupport_c/identifier.h"
 // already included above
@@ -984,6 +993,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_doozy_actions
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, doozy_actions, action, DollyDock_FeedbackMessage)() {
   return &::doozy_actions::action::rosidl_typesupport_c::DollyDock_FeedbackMessage_message_type_support_handle;
@@ -996,8 +1006,7 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, doozy_ac
 #include "action_msgs/msg/goal_status_array.h"
 #include "action_msgs/srv/cancel_goal.h"
 #include "doozy_actions/action/dolly_dock.h"
-// already included above
-// #include "doozy_actions/action/detail/dolly_dock__type_support.h"
+#include "doozy_actions/action/detail/dolly_dock__type_support.h"
 
 static rosidl_action_type_support_t _doozy_actions__action__DollyDock__typesupport_c;
 
@@ -1006,6 +1015,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_doozy_actions
 const rosidl_action_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__ACTION_SYMBOL_NAME(
   rosidl_typesupport_c, doozy_actions, action, DollyDock)()

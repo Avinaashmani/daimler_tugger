@@ -4,6 +4,9 @@ source;share/doozy_actions/hook/cmake_prefix_path.sh
 source;share/doozy_actions/hook/ld_library_path_lib.ps1
 source;share/doozy_actions/hook/ld_library_path_lib.dsv
 source;share/doozy_actions/hook/ld_library_path_lib.sh
+source;share/doozy_actions/hook/pythonpath.ps1
+source;share/doozy_actions/hook/pythonpath.dsv
+source;share/doozy_actions/hook/pythonpath.sh
 source;share/doozy_actions/local_setup.bash
 source;share/doozy_actions/local_setup.dsv
 source;share/doozy_actions/local_setup.ps1

@@ -60,7 +60,7 @@ class ArduinoController:
 
         self.arduino_1 = serial.Serial(port=self.tug_port, baudrate=self.baud_rate, timeout=0)
         self.arduino_2 = serial.Serial(port=self.latch_port, baudrate=self.baud_rate, timeout=0)
-        # self.arduino_3 = serial.Serial(port=self.hook_port, baudrate=self.baud_rate, timeout=0)
+        self.arduino_3 = serial.Serial(port=self.hook_port, baudrate=self.baud_rate, timeout=0)
 
         time.sleep(2)
         rospy.loginfo_once(f"Opening Tug Arm Port {self.tug_port} with baudrate {self.baud_rate}")

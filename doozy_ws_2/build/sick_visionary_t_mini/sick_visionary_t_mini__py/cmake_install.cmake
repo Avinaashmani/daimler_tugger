@@ -1,8 +1,8 @@
-# Install script for directory: /home/doozy/doozy_robotics/doozy_ws_2/build/sick_visionary_t_mini/sick_visionary_t_mini__py
+# Install script for directory: /home/avinaash/daimler_tugger/doozy_ws_2/build/sick_visionary_t_mini/sick_visionary_t_mini__py
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/doozy/doozy_robotics/doozy_ws_2/install/sick_visionary_t_mini")
+  set(CMAKE_INSTALL_PREFIX "/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -35,10 +35,5 @@ endif()
 # Is this installation the result of a crosscompile?
 if(NOT DEFINED CMAKE_CROSSCOMPILING)
   set(CMAKE_CROSSCOMPILING "FALSE")
-endif()
-
-# Set default install directory permissions.
-if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 

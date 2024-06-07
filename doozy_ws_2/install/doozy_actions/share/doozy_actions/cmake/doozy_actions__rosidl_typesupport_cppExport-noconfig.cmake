@@ -8,7 +8,6 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 # Import target "doozy_actions::doozy_actions__rosidl_typesupport_cpp" for configuration ""
 set_property(TARGET doozy_actions::doozy_actions__rosidl_typesupport_cpp APPEND PROPERTY IMPORTED_CONFIGURATIONS NOCONFIG)
 set_target_properties(doozy_actions::doozy_actions__rosidl_typesupport_cpp PROPERTIES
-  IMPORTED_LINK_DEPENDENT_LIBRARIES_NOCONFIG "rosidl_runtime_c::rosidl_runtime_c;rosidl_typesupport_cpp::rosidl_typesupport_cpp;rosidl_typesupport_c::rosidl_typesupport_c"
   IMPORTED_LOCATION_NOCONFIG "${_IMPORT_PREFIX}/lib/libdoozy_actions__rosidl_typesupport_cpp.so"
   IMPORTED_SONAME_NOCONFIG "libdoozy_actions__rosidl_typesupport_cpp.so"
   )

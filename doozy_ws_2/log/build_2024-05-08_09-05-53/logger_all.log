@@ -1,0 +1,580 @@
+[0.131s] DEBUG:colcon:Command line arguments: ['/home/avinaash/.local/bin/colcon', 'build']
+[0.131s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f0c21767820>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=16, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f0c21767820>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f0c21767d90>)
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.224s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.225s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/avinaash/daimler_tugger/doozy_ws_2'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'ignore'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'ignore_ament_install'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extensions ['colcon_pkg']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'colcon_pkg'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extensions ['colcon_meta']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'colcon_meta'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extensions ['ros']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'ros'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extensions ['cmake', 'python']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'cmake'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'python'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extensions ['python_setup_py']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino) by extension 'python_setup_py'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/libraries) by extensions ['ignore', 'ignore_ament_install']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/libraries) by extension 'ignore'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/libraries) by extension 'ignore_ament_install'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/libraries) by extensions ['colcon_pkg']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/libraries) by extension 'colcon_pkg'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/libraries) by extensions ['colcon_meta']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/libraries) by extension 'colcon_meta'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/libraries) by extensions ['ros']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/libraries) by extension 'ros'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/libraries) by extensions ['cmake', 'python']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/libraries) by extension 'cmake'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/libraries) by extension 'python'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/libraries) by extensions ['python_setup_py']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(Arduino/libraries) by extension 'python_setup_py'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/2_t_dolly_logistics_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/2_t_dolly_logistics_driver) by extension 'ignore'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/2_t_dolly_logistics_driver) by extension 'ignore_ament_install'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/2_t_dolly_logistics_driver) by extensions ['colcon_pkg']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/2_t_dolly_logistics_driver) by extension 'colcon_pkg'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/2_t_dolly_logistics_driver) by extensions ['colcon_meta']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/2_t_dolly_logistics_driver) by extension 'colcon_meta'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/2_t_dolly_logistics_driver) by extensions ['ros']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/2_t_dolly_logistics_driver) by extension 'ros'
+[0.240s] DEBUG:colcon.colcon_core.package_identification:Package 'src/2_t_dolly_logistics_driver' with type 'ros.ament_python' and name '2_t_dolly_logistics_driver'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino) by extensions ['ignore', 'ignore_ament_install']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino) by extension 'ignore'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino) by extension 'ignore_ament_install'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino) by extensions ['colcon_pkg']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino) by extension 'colcon_pkg'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino) by extensions ['colcon_meta']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino) by extension 'colcon_meta'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino) by extensions ['ros']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino) by extension 'ros'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino) by extensions ['cmake', 'python']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino) by extension 'cmake'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino) by extension 'python'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino) by extensions ['python_setup_py']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino) by extension 'python_setup_py'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/blank) by extensions ['ignore', 'ignore_ament_install']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/blank) by extension 'ignore'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/blank) by extension 'ignore_ament_install'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/blank) by extensions ['colcon_pkg']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/blank) by extension 'colcon_pkg'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/blank) by extensions ['colcon_meta']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/blank) by extension 'colcon_meta'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/blank) by extensions ['ros']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/blank) by extension 'ros'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/blank) by extensions ['cmake', 'python']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/blank) by extension 'cmake'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/blank) by extension 'python'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/blank) by extensions ['python_setup_py']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/blank) by extension 'python_setup_py'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/forklift_align_01) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/forklift_align_01) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/forklift_align_01) by extension 'ignore_ament_install'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/forklift_align_01) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/forklift_align_01) by extension 'colcon_pkg'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/forklift_align_01) by extensions ['colcon_meta']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/forklift_align_01) by extension 'colcon_meta'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/forklift_align_01) by extensions ['ros']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/forklift_align_01) by extension 'ros'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/forklift_align_01) by extensions ['cmake', 'python']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/forklift_align_01) by extension 'cmake'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/forklift_align_01) by extension 'python'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/forklift_align_01) by extensions ['python_setup_py']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/forklift_align_01) by extension 'python_setup_py'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm1_01) by extensions ['ignore', 'ignore_ament_install']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm1_01) by extension 'ignore'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm1_01) by extension 'ignore_ament_install'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm1_01) by extensions ['colcon_pkg']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm1_01) by extension 'colcon_pkg'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm1_01) by extensions ['colcon_meta']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm1_01) by extension 'colcon_meta'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm1_01) by extensions ['ros']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm1_01) by extension 'ros'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm1_01) by extensions ['cmake', 'python']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm1_01) by extension 'cmake'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm1_01) by extension 'python'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm1_01) by extensions ['python_setup_py']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm1_01) by extension 'python_setup_py'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm2_01) by extensions ['ignore', 'ignore_ament_install']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm2_01) by extension 'ignore'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm2_01) by extension 'ignore_ament_install'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm2_01) by extensions ['colcon_pkg']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm2_01) by extension 'colcon_pkg'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm2_01) by extensions ['colcon_meta']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm2_01) by extension 'colcon_meta'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm2_01) by extensions ['ros']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm2_01) by extension 'ros'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm2_01) by extensions ['cmake', 'python']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm2_01) by extension 'cmake'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm2_01) by extension 'python'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm2_01) by extensions ['python_setup_py']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/latch_arm2_01) by extension 'python_setup_py'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/libraries) by extensions ['ignore', 'ignore_ament_install']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/libraries) by extension 'ignore'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/libraries) by extension 'ignore_ament_install'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/libraries) by extensions ['colcon_pkg']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/libraries) by extension 'colcon_pkg'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/libraries) by extensions ['colcon_meta']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/libraries) by extension 'colcon_meta'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/libraries) by extensions ['ros']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/libraries) by extension 'ros'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/libraries) by extensions ['cmake', 'python']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/libraries) by extension 'cmake'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/libraries) by extension 'python'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/libraries) by extensions ['python_setup_py']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/libraries) by extension 'python_setup_py'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/linear_actuator_test_01) by extensions ['ignore', 'ignore_ament_install']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/linear_actuator_test_01) by extension 'ignore'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/linear_actuator_test_01) by extension 'ignore_ament_install'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/linear_actuator_test_01) by extensions ['colcon_pkg']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/linear_actuator_test_01) by extension 'colcon_pkg'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/linear_actuator_test_01) by extensions ['colcon_meta']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/linear_actuator_test_01) by extension 'colcon_meta'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/linear_actuator_test_01) by extensions ['ros']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/linear_actuator_test_01) by extension 'ros'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/linear_actuator_test_01) by extensions ['cmake', 'python']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/linear_actuator_test_01) by extension 'cmake'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/linear_actuator_test_01) by extension 'python'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/linear_actuator_test_01) by extensions ['python_setup_py']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/linear_actuator_test_01) by extension 'python_setup_py'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/max_sonar_aligner_01) by extensions ['ignore', 'ignore_ament_install']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/max_sonar_aligner_01) by extension 'ignore'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/max_sonar_aligner_01) by extension 'ignore_ament_install'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/max_sonar_aligner_01) by extensions ['colcon_pkg']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/max_sonar_aligner_01) by extension 'colcon_pkg'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/max_sonar_aligner_01) by extensions ['colcon_meta']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/max_sonar_aligner_01) by extension 'colcon_meta'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/max_sonar_aligner_01) by extensions ['ros']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/max_sonar_aligner_01) by extension 'ros'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/max_sonar_aligner_01) by extensions ['cmake', 'python']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/max_sonar_aligner_01) by extension 'cmake'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/max_sonar_aligner_01) by extension 'python'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/max_sonar_aligner_01) by extensions ['python_setup_py']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/max_sonar_aligner_01) by extension 'python_setup_py'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_01) by extensions ['ignore', 'ignore_ament_install']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_01) by extension 'ignore'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_01) by extension 'ignore_ament_install'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_01) by extensions ['colcon_pkg']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_01) by extension 'colcon_pkg'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_01) by extensions ['colcon_meta']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_01) by extension 'colcon_meta'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_01) by extensions ['ros']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_01) by extension 'ros'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_01) by extensions ['cmake', 'python']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_01) by extension 'cmake'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_01) by extension 'python'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_01) by extensions ['python_setup_py']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_01) by extension 'python_setup_py'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_02) by extensions ['ignore', 'ignore_ament_install']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_02) by extension 'ignore'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_02) by extension 'ignore_ament_install'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_02) by extensions ['colcon_pkg']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_02) by extension 'colcon_pkg'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_02) by extensions ['colcon_meta']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_02) by extension 'colcon_meta'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_02) by extensions ['ros']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_02) by extension 'ros'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_02) by extensions ['cmake', 'python']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_02) by extension 'cmake'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_02) by extension 'python'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_02) by extensions ['python_setup_py']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_arm_centering_02) by extension 'python_setup_py'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_01) by extensions ['ignore', 'ignore_ament_install']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_01) by extension 'ignore'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_01) by extension 'ignore_ament_install'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_01) by extensions ['colcon_pkg']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_01) by extension 'colcon_pkg'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_01) by extensions ['colcon_meta']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_01) by extension 'colcon_meta'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_01) by extensions ['ros']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_01) by extension 'ros'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_01) by extensions ['cmake', 'python']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_01) by extension 'cmake'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_01) by extension 'python'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_01) by extensions ['python_setup_py']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_01) by extension 'python_setup_py'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_02) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_02) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_02) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_02) by extensions ['colcon_pkg']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_02) by extension 'colcon_pkg'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_02) by extensions ['colcon_meta']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_02) by extension 'colcon_meta'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_02) by extensions ['ros']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_02) by extension 'ros'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_02) by extensions ['cmake', 'python']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_02) by extension 'cmake'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_02) by extension 'python'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_02) by extensions ['python_setup_py']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_bot_test_sketch_02) by extension 'python_setup_py'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_robot_latch_actuator_01) by extensions ['ignore', 'ignore_ament_install']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_robot_latch_actuator_01) by extension 'ignore'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_robot_latch_actuator_01) by extension 'ignore_ament_install'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_robot_latch_actuator_01) by extensions ['colcon_pkg']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_robot_latch_actuator_01) by extension 'colcon_pkg'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_robot_latch_actuator_01) by extensions ['colcon_meta']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_robot_latch_actuator_01) by extension 'colcon_meta'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_robot_latch_actuator_01) by extensions ['ros']
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_robot_latch_actuator_01) by extension 'ros'
+[0.246s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_robot_latch_actuator_01) by extensions ['cmake', 'python']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_robot_latch_actuator_01) by extension 'cmake'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_robot_latch_actuator_01) by extension 'python'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_robot_latch_actuator_01) by extensions ['python_setup_py']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/Arduino/tug_robot_latch_actuator_01) by extension 'python_setup_py'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/doozy_actions) by extensions ['ignore', 'ignore_ament_install']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/doozy_actions) by extension 'ignore'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/doozy_actions) by extension 'ignore_ament_install'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/doozy_actions) by extensions ['colcon_pkg']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/doozy_actions) by extension 'colcon_pkg'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/doozy_actions) by extensions ['colcon_meta']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/doozy_actions) by extension 'colcon_meta'
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/doozy_actions) by extensions ['ros']
+[0.247s] Level 1:colcon.colcon_core.package_identification:_identify(src/doozy_actions) by extension 'ros'
+[0.247s] DEBUG:colcon.colcon_core.package_identification:Package 'src/doozy_actions' with type 'ros.ament_cmake' and name 'doozy_actions'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/pallet_docker_02) by extensions ['ignore', 'ignore_ament_install']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/pallet_docker_02) by extension 'ignore'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/pallet_docker_02) by extension 'ignore_ament_install'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/pallet_docker_02) by extensions ['colcon_pkg']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/pallet_docker_02) by extension 'colcon_pkg'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/pallet_docker_02) by extensions ['colcon_meta']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/pallet_docker_02) by extension 'colcon_meta'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/pallet_docker_02) by extensions ['ros']
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/pallet_docker_02) by extension 'ros'
+[0.248s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pallet_docker_02' with type 'ros.ament_python' and name 'pallet_docker_02'
+[0.248s] Level 1:colcon.colcon_core.package_identification:_identify(src/sick_visionary_t_mini) by extensions ['ignore', 'ignore_ament_install']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/sick_visionary_t_mini) by extension 'ignore'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/sick_visionary_t_mini) by extension 'ignore_ament_install'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/sick_visionary_t_mini) by extensions ['colcon_pkg']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/sick_visionary_t_mini) by extension 'colcon_pkg'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/sick_visionary_t_mini) by extensions ['colcon_meta']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/sick_visionary_t_mini) by extension 'colcon_meta'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/sick_visionary_t_mini) by extensions ['ros']
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/sick_visionary_t_mini) by extension 'ros'
+[0.249s] DEBUG:colcon.colcon_core.package_identification:Package 'src/sick_visionary_t_mini' with type 'ros.ament_cmake' and name 'sick_visionary_t_mini'
+[0.249s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_scripts) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_scripts) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_scripts) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_scripts) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_scripts) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_scripts) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_scripts) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_scripts) by extension 'ros'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_scripts) by extensions ['cmake', 'python']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_scripts) by extension 'cmake'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_scripts) by extension 'python'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_scripts) by extensions ['python_setup_py']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_scripts) by extension 'python_setup_py'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(worlds ) by extensions ['ignore', 'ignore_ament_install']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(worlds ) by extension 'ignore'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(worlds ) by extension 'ignore_ament_install'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(worlds ) by extensions ['colcon_pkg']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(worlds ) by extension 'colcon_pkg'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(worlds ) by extensions ['colcon_meta']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(worlds ) by extension 'colcon_meta'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(worlds ) by extensions ['ros']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(worlds ) by extension 'ros'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(worlds ) by extensions ['cmake', 'python']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(worlds ) by extension 'cmake'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(worlds ) by extension 'python'
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(worlds ) by extensions ['python_setup_py']
+[0.250s] Level 1:colcon.colcon_core.package_identification:_identify(worlds ) by extension 'python_setup_py'
+[0.250s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.251s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.262s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.262s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.263s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/avinaash/doozy_robotics/doozy_ws_2/install
+[0.263s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/avinaash/ForkLift_AMR/install
+[0.264s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 388 installed packages in /opt/ros/galactic
+[0.266s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.325s] Level 5:colcon.colcon_core.verb:set package '2_t_dolly_logistics_driver' build argument 'cmake_args' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package '2_t_dolly_logistics_driver' build argument 'cmake_target' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package '2_t_dolly_logistics_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package '2_t_dolly_logistics_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package '2_t_dolly_logistics_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package '2_t_dolly_logistics_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.325s] Level 5:colcon.colcon_core.verb:set package '2_t_dolly_logistics_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package '2_t_dolly_logistics_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.325s] Level 5:colcon.colcon_core.verb:set package '2_t_dolly_logistics_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.325s] DEBUG:colcon.colcon_core.verb:Building package '2_t_dolly_logistics_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver', 'merge_install': False, 'path': '/home/avinaash/daimler_tugger/doozy_ws_2/src/2_t_dolly_logistics_driver', 'symlink_install': False, 'test_result_base': None}
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'doozy_actions' build argument 'cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'doozy_actions' build argument 'cmake_target' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'doozy_actions' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'doozy_actions' build argument 'cmake_clean_cache' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'doozy_actions' build argument 'cmake_clean_first' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'doozy_actions' build argument 'cmake_force_configure' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'doozy_actions' build argument 'ament_cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'doozy_actions' build argument 'catkin_cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'doozy_actions' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.326s] DEBUG:colcon.colcon_core.verb:Building package 'doozy_actions' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/avinaash/daimler_tugger/doozy_ws_2/build/doozy_actions', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions', 'merge_install': False, 'path': '/home/avinaash/daimler_tugger/doozy_ws_2/src/doozy_actions', 'symlink_install': False, 'test_result_base': None}
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'pallet_docker_02' build argument 'cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'pallet_docker_02' build argument 'cmake_target' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'pallet_docker_02' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'pallet_docker_02' build argument 'cmake_clean_cache' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'pallet_docker_02' build argument 'cmake_clean_first' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'pallet_docker_02' build argument 'cmake_force_configure' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'pallet_docker_02' build argument 'ament_cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'pallet_docker_02' build argument 'catkin_cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'pallet_docker_02' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.326s] DEBUG:colcon.colcon_core.verb:Building package 'pallet_docker_02' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/avinaash/daimler_tugger/doozy_ws_2/build/pallet_docker_02', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02', 'merge_install': False, 'path': '/home/avinaash/daimler_tugger/doozy_ws_2/src/pallet_docker_02', 'symlink_install': False, 'test_result_base': None}
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'sick_visionary_t_mini' build argument 'cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'sick_visionary_t_mini' build argument 'cmake_target' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'sick_visionary_t_mini' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'sick_visionary_t_mini' build argument 'cmake_clean_cache' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'sick_visionary_t_mini' build argument 'cmake_clean_first' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'sick_visionary_t_mini' build argument 'cmake_force_configure' from command line to 'False'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'sick_visionary_t_mini' build argument 'ament_cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'sick_visionary_t_mini' build argument 'catkin_cmake_args' from command line to 'None'
+[0.326s] Level 5:colcon.colcon_core.verb:set package 'sick_visionary_t_mini' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.326s] DEBUG:colcon.colcon_core.verb:Building package 'sick_visionary_t_mini' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/avinaash/daimler_tugger/doozy_ws_2/build/sick_visionary_t_mini', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini', 'merge_install': False, 'path': '/home/avinaash/daimler_tugger/doozy_ws_2/src/sick_visionary_t_mini', 'symlink_install': False, 'test_result_base': None}
+[0.326s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.327s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.327s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/avinaash/daimler_tugger/doozy_ws_2/src/2_t_dolly_logistics_driver' with build type 'ament_python'
+[0.327s] Level 1:colcon.colcon_core.shell:create_environment_hook('2_t_dolly_logistics_driver', 'ament_prefix_path')
+[0.329s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.329s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/share/2_t_dolly_logistics_driver/hook/ament_prefix_path.ps1'
+[0.330s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/share/2_t_dolly_logistics_driver/hook/ament_prefix_path.dsv'
+[0.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/share/2_t_dolly_logistics_driver/hook/ament_prefix_path.sh'
+[0.330s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.330s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.334s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/avinaash/daimler_tugger/doozy_ws_2/src/doozy_actions' with build type 'ament_cmake'
+[0.334s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/avinaash/daimler_tugger/doozy_ws_2/src/doozy_actions'
+[0.334s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.334s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.338s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/avinaash/daimler_tugger/doozy_ws_2/src/pallet_docker_02' with build type 'ament_python'
+[0.338s] Level 1:colcon.colcon_core.shell:create_environment_hook('pallet_docker_02', 'ament_prefix_path')
+[0.338s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02/share/pallet_docker_02/hook/ament_prefix_path.ps1'
+[0.339s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02/share/pallet_docker_02/hook/ament_prefix_path.dsv'
+[0.339s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02/share/pallet_docker_02/hook/ament_prefix_path.sh'
+[0.339s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.339s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.343s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/avinaash/daimler_tugger/doozy_ws_2/src/sick_visionary_t_mini' with build type 'ament_cmake'
+[0.343s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/avinaash/daimler_tugger/doozy_ws_2/src/sick_visionary_t_mini'
+[0.343s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.343s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.507s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/avinaash/daimler_tugger/doozy_ws_2/src/2_t_dolly_logistics_driver'
+[0.508s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.508s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.516s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/avinaash/daimler_tugger/doozy_ws_2/build/doozy_actions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/avinaash/doozy_robotics/doozy_ws_2/install/pallet_docker_02:/home/avinaash/doozy_robotics/doozy_ws_2/install/2_t_dolly_logistics_driver:/home/avinaash/ForkLift_AMR/install/doozy_forklift:/opt/ros/galactic /usr/bin/cmake /home/avinaash/daimler_tugger/doozy_ws_2/src/doozy_actions -DCMAKE_INSTALL_PREFIX=/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions
+[0.676s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/avinaash/daimler_tugger/doozy_ws_2/src/pallet_docker_02'
+[0.676s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.676s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.693s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/avinaash/daimler_tugger/doozy_ws_2/build/sick_visionary_t_mini': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/avinaash/doozy_robotics/doozy_ws_2/install/pallet_docker_02:/home/avinaash/doozy_robotics/doozy_ws_2/install/2_t_dolly_logistics_driver:/home/avinaash/ForkLift_AMR/install/doozy_forklift:/opt/ros/galactic /usr/bin/cmake /home/avinaash/daimler_tugger/doozy_ws_2/src/sick_visionary_t_mini -DCMAKE_INSTALL_PREFIX=/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini
+[1.061s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/avinaash/daimler_tugger/doozy_ws_2/src/2_t_dolly_logistics_driver': PYTHONPATH=/home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/prefix_override:/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/2_t_dolly_logistics_driver build --build-base /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build install --record /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/install.log --single-version-externally-managed install_data
+[1.074s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/avinaash/daimler_tugger/doozy_ws_2/src/pallet_docker_02': PYTHONPATH=/home/avinaash/daimler_tugger/doozy_ws_2/build/pallet_docker_02/prefix_override:/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pallet_docker_02 build --build-base /home/avinaash/daimler_tugger/doozy_ws_2/build/pallet_docker_02/build install --record /home/avinaash/daimler_tugger/doozy_ws_2/build/pallet_docker_02/install.log --single-version-externally-managed install_data
+[1.295s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/avinaash/daimler_tugger/doozy_ws_2/src/2_t_dolly_logistics_driver' returned '0': PYTHONPATH=/home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/prefix_override:/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/2_t_dolly_logistics_driver build --build-base /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build install --record /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/install.log --single-version-externally-managed install_data
+[1.297s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver' for CMake module files
+[1.297s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver' for CMake config files
+[1.298s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib'
+[1.298s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/bin'
+[1.298s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/pkgconfig/2_t_dolly_logistics_driver.pc'
+[1.298s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages'
+[1.298s] Level 1:colcon.colcon_core.shell:create_environment_hook('2_t_dolly_logistics_driver', 'pythonpath')
+[1.298s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/share/2_t_dolly_logistics_driver/hook/pythonpath.ps1'
+[1.298s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/share/2_t_dolly_logistics_driver/hook/pythonpath.dsv'
+[1.299s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/share/2_t_dolly_logistics_driver/hook/pythonpath.sh'
+[1.299s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/bin'
+[1.299s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(2_t_dolly_logistics_driver)
+[1.299s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/share/2_t_dolly_logistics_driver/package.ps1'
+[1.300s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/share/2_t_dolly_logistics_driver/package.dsv'
+[1.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/share/2_t_dolly_logistics_driver/package.sh'
+[1.300s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/share/2_t_dolly_logistics_driver/package.bash'
+[1.301s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/share/2_t_dolly_logistics_driver/package.zsh'
+[1.301s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/share/colcon-core/packages/2_t_dolly_logistics_driver)
+[1.303s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02' for CMake module files
+[1.303s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/avinaash/daimler_tugger/doozy_ws_2/src/pallet_docker_02' returned '0': PYTHONPATH=/home/avinaash/daimler_tugger/doozy_ws_2/build/pallet_docker_02/prefix_override:/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/pallet_docker_02 build --build-base /home/avinaash/daimler_tugger/doozy_ws_2/build/pallet_docker_02/build install --record /home/avinaash/daimler_tugger/doozy_ws_2/build/pallet_docker_02/install.log --single-version-externally-managed install_data
+[1.304s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02' for CMake config files
+[1.304s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02/lib'
+[1.304s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02/bin'
+[1.304s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02/lib/pkgconfig/pallet_docker_02.pc'
+[1.304s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02/lib/python3.8/site-packages'
+[1.304s] Level 1:colcon.colcon_core.shell:create_environment_hook('pallet_docker_02', 'pythonpath')
+[1.304s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02/share/pallet_docker_02/hook/pythonpath.ps1'
+[1.304s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02/share/pallet_docker_02/hook/pythonpath.dsv'
+[1.305s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02/share/pallet_docker_02/hook/pythonpath.sh'
+[1.305s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02/bin'
+[1.305s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pallet_docker_02)
+[1.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02/share/pallet_docker_02/package.ps1'
+[1.305s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02/share/pallet_docker_02/package.dsv'
+[1.306s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02/share/pallet_docker_02/package.sh'
+[1.306s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02/share/pallet_docker_02/package.bash'
+[1.306s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02/share/pallet_docker_02/package.zsh'
+[1.306s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/avinaash/daimler_tugger/doozy_ws_2/install/pallet_docker_02/share/colcon-core/packages/pallet_docker_02)
+[1.656s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/avinaash/daimler_tugger/doozy_ws_2/build/doozy_actions' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/avinaash/doozy_robotics/doozy_ws_2/install/pallet_docker_02:/home/avinaash/doozy_robotics/doozy_ws_2/install/2_t_dolly_logistics_driver:/home/avinaash/ForkLift_AMR/install/doozy_forklift:/opt/ros/galactic /usr/bin/cmake /home/avinaash/daimler_tugger/doozy_ws_2/src/doozy_actions -DCMAKE_INSTALL_PREFIX=/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions
+[1.660s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/avinaash/daimler_tugger/doozy_ws_2/build/doozy_actions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/avinaash/doozy_robotics/doozy_ws_2/install/pallet_docker_02:/home/avinaash/doozy_robotics/doozy_ws_2/install/2_t_dolly_logistics_driver:/home/avinaash/ForkLift_AMR/install/doozy_forklift:/opt/ros/galactic /usr/bin/cmake --build /home/avinaash/daimler_tugger/doozy_ws_2/build/doozy_actions -- -j16 -l16
+[1.973s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/avinaash/daimler_tugger/doozy_ws_2/build/sick_visionary_t_mini' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/avinaash/doozy_robotics/doozy_ws_2/install/pallet_docker_02:/home/avinaash/doozy_robotics/doozy_ws_2/install/2_t_dolly_logistics_driver:/home/avinaash/ForkLift_AMR/install/doozy_forklift:/opt/ros/galactic /usr/bin/cmake /home/avinaash/daimler_tugger/doozy_ws_2/src/sick_visionary_t_mini -DCMAKE_INSTALL_PREFIX=/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini
+[1.976s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/avinaash/daimler_tugger/doozy_ws_2/build/sick_visionary_t_mini': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/avinaash/doozy_robotics/doozy_ws_2/install/pallet_docker_02:/home/avinaash/doozy_robotics/doozy_ws_2/install/2_t_dolly_logistics_driver:/home/avinaash/ForkLift_AMR/install/doozy_forklift:/opt/ros/galactic /usr/bin/cmake --build /home/avinaash/daimler_tugger/doozy_ws_2/build/sick_visionary_t_mini -- -j16 -l16
+[4.049s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/avinaash/daimler_tugger/doozy_ws_2/build/sick_visionary_t_mini' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/avinaash/doozy_robotics/doozy_ws_2/install/pallet_docker_02:/home/avinaash/doozy_robotics/doozy_ws_2/install/2_t_dolly_logistics_driver:/home/avinaash/ForkLift_AMR/install/doozy_forklift:/opt/ros/galactic /usr/bin/cmake --build /home/avinaash/daimler_tugger/doozy_ws_2/build/sick_visionary_t_mini -- -j16 -l16
+[4.102s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/avinaash/daimler_tugger/doozy_ws_2/build/sick_visionary_t_mini': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/avinaash/doozy_robotics/doozy_ws_2/install/pallet_docker_02:/home/avinaash/doozy_robotics/doozy_ws_2/install/2_t_dolly_logistics_driver:/home/avinaash/ForkLift_AMR/install/doozy_forklift:/opt/ros/galactic /usr/bin/cmake --install /home/avinaash/daimler_tugger/doozy_ws_2/build/sick_visionary_t_mini
+[4.150s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sick_visionary_t_mini)
+[4.151s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/avinaash/daimler_tugger/doozy_ws_2/build/sick_visionary_t_mini' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/avinaash/doozy_robotics/doozy_ws_2/install/pallet_docker_02:/home/avinaash/doozy_robotics/doozy_ws_2/install/2_t_dolly_logistics_driver:/home/avinaash/ForkLift_AMR/install/doozy_forklift:/opt/ros/galactic /usr/bin/cmake --install /home/avinaash/daimler_tugger/doozy_ws_2/build/sick_visionary_t_mini
+[4.151s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini' for CMake module files
+[4.152s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini' for CMake config files
+[4.152s] Level 1:colcon.colcon_core.shell:create_environment_hook('sick_visionary_t_mini', 'cmake_prefix_path')
+[4.153s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/hook/cmake_prefix_path.ps1'
+[4.153s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/hook/cmake_prefix_path.dsv'
+[4.154s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/hook/cmake_prefix_path.sh'
+[4.154s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/lib'
+[4.155s] Level 1:colcon.colcon_core.shell:create_environment_hook('sick_visionary_t_mini', 'ld_library_path_lib')
+[4.155s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/hook/ld_library_path_lib.ps1'
+[4.155s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/hook/ld_library_path_lib.dsv'
+[4.155s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/hook/ld_library_path_lib.sh'
+[4.156s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/bin'
+[4.156s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/lib/pkgconfig/sick_visionary_t_mini.pc'
+[4.156s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/lib/python3.8/site-packages'
+[4.156s] Level 1:colcon.colcon_core.shell:create_environment_hook('sick_visionary_t_mini', 'pythonpath')
+[4.157s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/hook/pythonpath.ps1'
+[4.157s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/hook/pythonpath.dsv'
+[4.157s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/hook/pythonpath.sh'
+[4.158s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/bin'
+[4.158s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/package.ps1'
+[4.159s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/package.dsv'
+[4.159s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/package.sh'
+[4.160s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/package.bash'
+[4.160s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/package.zsh'
+[4.161s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/colcon-core/packages/sick_visionary_t_mini)
+[4.201s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(sick_visionary_t_mini)
+[4.202s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini' for CMake module files
+[4.202s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini' for CMake config files
+[4.203s] Level 1:colcon.colcon_core.shell:create_environment_hook('sick_visionary_t_mini', 'cmake_prefix_path')
+[4.203s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/hook/cmake_prefix_path.ps1'
+[4.204s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/hook/cmake_prefix_path.dsv'
+[4.204s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/hook/cmake_prefix_path.sh'
+[4.205s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/lib'
+[4.205s] Level 1:colcon.colcon_core.shell:create_environment_hook('sick_visionary_t_mini', 'ld_library_path_lib')
+[4.205s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/hook/ld_library_path_lib.ps1'
+[4.206s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/hook/ld_library_path_lib.dsv'
+[4.206s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/hook/ld_library_path_lib.sh'
+[4.206s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/bin'
+[4.206s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/lib/pkgconfig/sick_visionary_t_mini.pc'
+[4.207s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/lib/python3.8/site-packages'
+[4.207s] Level 1:colcon.colcon_core.shell:create_environment_hook('sick_visionary_t_mini', 'pythonpath')
+[4.207s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/hook/pythonpath.ps1'
+[4.208s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/hook/pythonpath.dsv'
+[4.208s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/hook/pythonpath.sh'
+[4.208s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/bin'
+[4.209s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/package.ps1'
+[4.210s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/package.dsv'
+[4.210s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/package.sh'
+[4.211s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/package.bash'
+[4.211s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/sick_visionary_t_mini/package.zsh'
+[4.211s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/avinaash/daimler_tugger/doozy_ws_2/install/sick_visionary_t_mini/share/colcon-core/packages/sick_visionary_t_mini)
+[4.907s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/avinaash/daimler_tugger/doozy_ws_2/build/doozy_actions' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/avinaash/doozy_robotics/doozy_ws_2/install/pallet_docker_02:/home/avinaash/doozy_robotics/doozy_ws_2/install/2_t_dolly_logistics_driver:/home/avinaash/ForkLift_AMR/install/doozy_forklift:/opt/ros/galactic /usr/bin/cmake --build /home/avinaash/daimler_tugger/doozy_ws_2/build/doozy_actions -- -j16 -l16
+[4.978s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/avinaash/daimler_tugger/doozy_ws_2/build/doozy_actions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/avinaash/doozy_robotics/doozy_ws_2/install/pallet_docker_02:/home/avinaash/doozy_robotics/doozy_ws_2/install/2_t_dolly_logistics_driver:/home/avinaash/ForkLift_AMR/install/doozy_forklift:/opt/ros/galactic /usr/bin/cmake --install /home/avinaash/daimler_tugger/doozy_ws_2/build/doozy_actions
+[5.033s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(doozy_actions)
+[5.033s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/avinaash/daimler_tugger/doozy_ws_2/build/doozy_actions' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/avinaash/doozy_robotics/doozy_ws_2/install/pallet_docker_02:/home/avinaash/doozy_robotics/doozy_ws_2/install/2_t_dolly_logistics_driver:/home/avinaash/ForkLift_AMR/install/doozy_forklift:/opt/ros/galactic /usr/bin/cmake --install /home/avinaash/daimler_tugger/doozy_ws_2/build/doozy_actions
+[5.034s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions' for CMake module files
+[5.034s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions' for CMake config files
+[5.035s] Level 1:colcon.colcon_core.shell:create_environment_hook('doozy_actions', 'cmake_prefix_path')
+[5.035s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/hook/cmake_prefix_path.ps1'
+[5.036s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/hook/cmake_prefix_path.dsv'
+[5.037s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/hook/cmake_prefix_path.sh'
+[5.038s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/lib'
+[5.038s] Level 1:colcon.colcon_core.shell:create_environment_hook('doozy_actions', 'ld_library_path_lib')
+[5.038s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/hook/ld_library_path_lib.ps1'
+[5.039s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/hook/ld_library_path_lib.dsv'
+[5.039s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/hook/ld_library_path_lib.sh'
+[5.040s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/bin'
+[5.040s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/lib/pkgconfig/doozy_actions.pc'
+[5.040s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/lib/python3.8/site-packages'
+[5.040s] Level 1:colcon.colcon_core.shell:create_environment_hook('doozy_actions', 'pythonpath')
+[5.041s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/hook/pythonpath.ps1'
+[5.041s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/hook/pythonpath.dsv'
+[5.042s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/hook/pythonpath.sh'
+[5.043s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/bin'
+[5.043s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/package.ps1'
+[5.043s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/package.dsv'
+[5.043s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/package.sh'
+[5.043s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/package.bash'
+[5.044s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/package.zsh'
+[5.044s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/colcon-core/packages/doozy_actions)
+[5.108s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(doozy_actions)
+[5.109s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions' for CMake module files
+[5.110s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions' for CMake config files
+[5.110s] Level 1:colcon.colcon_core.shell:create_environment_hook('doozy_actions', 'cmake_prefix_path')
+[5.110s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/hook/cmake_prefix_path.ps1'
+[5.111s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/hook/cmake_prefix_path.dsv'
+[5.111s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/hook/cmake_prefix_path.sh'
+[5.112s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/lib'
+[5.112s] Level 1:colcon.colcon_core.shell:create_environment_hook('doozy_actions', 'ld_library_path_lib')
+[5.112s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/hook/ld_library_path_lib.ps1'
+[5.112s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/hook/ld_library_path_lib.dsv'
+[5.112s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/hook/ld_library_path_lib.sh'
+[5.112s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/bin'
+[5.112s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/lib/pkgconfig/doozy_actions.pc'
+[5.113s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/lib/python3.8/site-packages'
+[5.113s] Level 1:colcon.colcon_core.shell:create_environment_hook('doozy_actions', 'pythonpath')
+[5.113s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/hook/pythonpath.ps1'
+[5.113s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/hook/pythonpath.dsv'
+[5.113s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/hook/pythonpath.sh'
+[5.114s] Level 1:colcon.colcon_core.environment:checking '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/bin'
+[5.114s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/package.ps1'
+[5.114s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/package.dsv'
+[5.114s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/package.sh'
+[5.115s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/package.bash'
+[5.115s] INFO:colcon.colcon_core.shell:Creating package script '/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/doozy_actions/package.zsh'
+[5.115s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/avinaash/daimler_tugger/doozy_ws_2/install/doozy_actions/share/colcon-core/packages/doozy_actions)
+[5.115s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[5.116s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[5.116s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[5.116s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[5.125s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[5.125s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[5.126s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[5.143s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[5.144s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/avinaash/daimler_tugger/doozy_ws_2/install/local_setup.ps1'
+[5.145s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/avinaash/daimler_tugger/doozy_ws_2/install/_local_setup_util_ps1.py'
+[5.145s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/avinaash/daimler_tugger/doozy_ws_2/install/setup.ps1'
+[5.146s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/avinaash/daimler_tugger/doozy_ws_2/install/local_setup.sh'
+[5.147s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/avinaash/daimler_tugger/doozy_ws_2/install/_local_setup_util_sh.py'
+[5.147s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/avinaash/daimler_tugger/doozy_ws_2/install/setup.sh'
+[5.147s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/avinaash/daimler_tugger/doozy_ws_2/install/local_setup.bash'
+[5.148s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/avinaash/daimler_tugger/doozy_ws_2/install/setup.bash'
+[5.148s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/avinaash/daimler_tugger/doozy_ws_2/install/local_setup.zsh'
+[5.149s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/avinaash/daimler_tugger/doozy_ws_2/install/setup.zsh'

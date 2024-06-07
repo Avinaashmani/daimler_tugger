@@ -1,4 +1,4 @@
-/home/doozy/doozy_robotics/doozy_ws_2/build/doozy_actions/rosidl_adapter/doozy_actions:action/DollyDock.idl
-/home/doozy/doozy_robotics/doozy_ws_2/build/doozy_actions/rosidl_adapter/doozy_actions:msg/Docking.idl
-/home/doozy/doozy_robotics/doozy_ws_2/build/doozy_actions/rosidl_adapter/doozy_actions:msg/Diagnostics.idl
-/home/doozy/doozy_robotics/doozy_ws_2/build/doozy_actions/rosidl_adapter/doozy_actions:msg/Navigation.idl
+/home/avinaash/daimler_tugger/doozy_ws_2/build/doozy_actions/rosidl_adapter/doozy_actions:action/DollyDock.idl
+/home/avinaash/daimler_tugger/doozy_ws_2/build/doozy_actions/rosidl_adapter/doozy_actions:msg/Docking.idl
+/home/avinaash/daimler_tugger/doozy_ws_2/build/doozy_actions/rosidl_adapter/doozy_actions:msg/Diagnostics.idl
+/home/avinaash/daimler_tugger/doozy_ws_2/build/doozy_actions/rosidl_adapter/doozy_actions:msg/Navigation.idl

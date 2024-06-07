@@ -4,8 +4,8 @@
 
 #include "cstddef"
 #include "rosidl_runtime_c/message_type_support_struct.h"
+#include "doozy_actions/msg/rosidl_typesupport_c__visibility_control.h"
 #include "doozy_actions/msg/detail/diagnostics__struct.h"
-#include "doozy_actions/msg/detail/diagnostics__type_support.h"
 #include "rosidl_typesupport_c/identifier.h"
 #include "rosidl_typesupport_c/message_type_support_dispatch.h"
 #include "rosidl_typesupport_c/type_support_map.h"
@@ -85,6 +85,7 @@ extern "C"
 {
 #endif
 
+ROSIDL_TYPESUPPORT_C_EXPORT_doozy_actions
 const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_c, doozy_actions, msg, Diagnostics)() {
   return &::doozy_actions::msg::rosidl_typesupport_c::Diagnostics_message_type_support_handle;

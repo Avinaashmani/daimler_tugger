@@ -23,7 +23,7 @@ class DockDolly:
 
         self.dolly_frame = 'dolly_01'
         self.source_frame = 'map'
-        self.tb3_frame = 'base_link'
+        self.tb3_frame = 'map'
 
         self.tb3_x = 0.0
         self.tb3_y = 0.0
@@ -73,18 +73,19 @@ class DockDolly:
 
                 self.diagnostics_msg.data = "Docking Under Process..."
                 self.diagnostics_pub.publish(self.diagnostics_msg)
+                rospy.loginfo("Docking Under Process...")
 
-                if abs(yaw_angle_error) > 0.15:
-                    if abs(angle_difference) > 0.1:
-                        if yaw_angle_error > 0.0:
-                            self.move_tug.angular.z = 0.2
-                        else:
-                            self.move_tug.angular.z = -0.2
-                else:
-                    self.move_tug.linear.x = 0.07
-                self.move_tug.linear.x = 0.0
-                self.move_tug.angular.z = 0.0
-                self.cmd_pub.publish(self.move_tug)
+                # if abs(yaw_angle_error) > 0.15:
+                #     if abs(angle_difference) > 0.1:
+                #         if yaw_angle_error > 0.0:
+                #             self.move_tug.angular.z = 0.2
+                #         else:
+                #             self.move_tug.angular.z = -0.2
+                # else:
+                #     self.move_tug.linear.x = 0.07
+                # self.move_tug.linear.x = 0.0
+                # self.move_tug.angular.z = 0.0
+                # self.cmd_pub.publish(self.move_tug)
 
             else:
                 rospy.loginfo("Goal Reached")
@@ -125,7 +126,6 @@ class DockDolly:
         
     def goal_callback(self, msg):
         if msg:
-
             self.navigate_flag = True
         else:
             self.navigate_flag = False

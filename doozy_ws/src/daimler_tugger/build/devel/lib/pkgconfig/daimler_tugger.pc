@@ -1,0 +1,8 @@
+prefix=/home/avinaash/daimler_tugger/doozy_ws/src/daimler_tugger/build/devel
+
+Name: daimler_tugger
+Description: Description of daimler_tugger
+Version: 0.0.0
+Cflags: -I/home/avinaash/daimler_tugger/doozy_ws/src/daimler_tugger/build/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

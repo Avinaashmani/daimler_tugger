@@ -1,0 +1,96 @@
+running egg_info
+creating ../../build/2_t_dolly_logistics_driver/2_t_dolly_logistics_driver.egg-info
+writing ../../build/2_t_dolly_logistics_driver/2_t_dolly_logistics_driver.egg-info/PKG-INFO
+writing dependency_links to ../../build/2_t_dolly_logistics_driver/2_t_dolly_logistics_driver.egg-info/dependency_links.txt
+writing entry points to ../../build/2_t_dolly_logistics_driver/2_t_dolly_logistics_driver.egg-info/entry_points.txt
+writing requirements to ../../build/2_t_dolly_logistics_driver/2_t_dolly_logistics_driver.egg-info/requires.txt
+writing top-level names to ../../build/2_t_dolly_logistics_driver/2_t_dolly_logistics_driver.egg-info/top_level.txt
+writing manifest file '../../build/2_t_dolly_logistics_driver/2_t_dolly_logistics_driver.egg-info/SOURCES.txt'
+reading manifest file '../../build/2_t_dolly_logistics_driver/2_t_dolly_logistics_driver.egg-info/SOURCES.txt'
+writing manifest file '../../build/2_t_dolly_logistics_driver/2_t_dolly_logistics_driver.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build
+creating /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib
+creating /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver
+copying 2_t_dolly_logistics_driver/gui_01.py -> /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver
+copying 2_t_dolly_logistics_driver/dock_to_dolly_02.py -> /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver
+copying 2_t_dolly_logistics_driver/latch_unlatch_02.py -> /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver
+copying 2_t_dolly_logistics_driver/docking_system_test_01.py -> /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver
+copying 2_t_dolly_logistics_driver/latch_unlatch_03.py -> /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver
+copying 2_t_dolly_logistics_driver/latch_unlatch_01.py -> /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver
+copying 2_t_dolly_logistics_driver/tf_broadcaster_01.py -> /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver
+copying 2_t_dolly_logistics_driver/dock_to_dolly_01.py -> /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver
+copying 2_t_dolly_logistics_driver/nav_to_dolly_02.py -> /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver
+copying 2_t_dolly_logistics_driver/pallet_navi_dock_01.py -> /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver
+copying 2_t_dolly_logistics_driver/__init__.py -> /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver
+copying 2_t_dolly_logistics_driver/gui_02.py -> /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver
+copying 2_t_dolly_logistics_driver/dock_to_dolly_03.py -> /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver
+copying 2_t_dolly_logistics_driver/behaviour_tree_01.py -> /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver
+copying 2_t_dolly_logistics_driver/gui_04.py -> /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver
+copying 2_t_dolly_logistics_driver/nav_to_dolly_01.py -> /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver
+copying 2_t_dolly_logistics_driver/gui_03.py -> /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver
+copying 2_t_dolly_logistics_driver/behavior_tree_01.py -> /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver
+running install
+running install_lib
+creating /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver
+copying /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver/gui_01.py -> /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver
+copying /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver/dock_to_dolly_02.py -> /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver
+copying /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver/latch_unlatch_02.py -> /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver
+copying /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver/docking_system_test_01.py -> /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver
+copying /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver/latch_unlatch_03.py -> /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver
+copying /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver/latch_unlatch_01.py -> /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver
+copying /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver/tf_broadcaster_01.py -> /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver
+copying /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver/dock_to_dolly_01.py -> /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver
+copying /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver/nav_to_dolly_02.py -> /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver
+copying /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver/pallet_navi_dock_01.py -> /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver
+copying /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver/__init__.py -> /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver
+copying /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver/gui_02.py -> /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver
+copying /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver/dock_to_dolly_03.py -> /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver
+copying /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver/behaviour_tree_01.py -> /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver
+copying /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver/gui_04.py -> /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver
+copying /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver/nav_to_dolly_01.py -> /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver
+copying /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver/gui_03.py -> /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver
+copying /home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/build/lib/2_t_dolly_logistics_driver/behavior_tree_01.py -> /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver
+byte-compiling /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver/gui_01.py to gui_01.cpython-38.pyc
+byte-compiling /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver/dock_to_dolly_02.py to dock_to_dolly_02.cpython-38.pyc
+byte-compiling /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver/latch_unlatch_02.py to latch_unlatch_02.cpython-38.pyc
+byte-compiling /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver/docking_system_test_01.py to docking_system_test_01.cpython-38.pyc
+byte-compiling /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver/latch_unlatch_03.py to latch_unlatch_03.cpython-38.pyc
+byte-compiling /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver/latch_unlatch_01.py to latch_unlatch_01.cpython-38.pyc
+byte-compiling /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver/tf_broadcaster_01.py to tf_broadcaster_01.cpython-38.pyc
+byte-compiling /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver/dock_to_dolly_01.py to dock_to_dolly_01.cpython-38.pyc
+byte-compiling /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver/nav_to_dolly_02.py to nav_to_dolly_02.cpython-38.pyc
+byte-compiling /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver/pallet_navi_dock_01.py to pallet_navi_dock_01.cpython-38.pyc
+byte-compiling /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver/__init__.py to __init__.cpython-38.pyc
+byte-compiling /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver/gui_02.py to gui_02.cpython-38.pyc
+byte-compiling /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver/dock_to_dolly_03.py to dock_to_dolly_03.cpython-38.pyc
+byte-compiling /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver/behaviour_tree_01.py to behaviour_tree_01.cpython-38.pyc
+byte-compiling /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver/gui_04.py to gui_04.cpython-38.pyc
+byte-compiling /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver/nav_to_dolly_01.py to nav_to_dolly_01.cpython-38.pyc
+byte-compiling /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver/gui_03.py to gui_03.cpython-38.pyc
+byte-compiling /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver/behavior_tree_01.py to behavior_tree_01.cpython-38.pyc
+running install_data
+creating /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/share/ament_index
+creating /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/share/ament_index/resource_index
+creating /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/share/ament_index/resource_index/packages
+copying resource/2_t_dolly_logistics_driver -> /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/share/ament_index/resource_index/packages
+copying package.xml -> /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/share/2_t_dolly_logistics_driver
+running install_egg_info
+Copying ../../build/2_t_dolly_logistics_driver/2_t_dolly_logistics_driver.egg-info to /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/python3.8/site-packages/2_t_dolly_logistics_driver-0.0.0-py3.8.egg-info
+running install_scripts
+Installing Dock2Dolly_01 script to /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/2_t_dolly_logistics_driver
+Installing Dock2Dolly_02 script to /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/2_t_dolly_logistics_driver
+Installing Dock2Dolly_03 script to /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/2_t_dolly_logistics_driver
+Installing GUI script to /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/2_t_dolly_logistics_driver
+Installing GUI_2 script to /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/2_t_dolly_logistics_driver
+Installing GUI_3 script to /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/2_t_dolly_logistics_driver
+Installing GUI_4 script to /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/2_t_dolly_logistics_driver
+Installing Latch_Unlatch script to /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/2_t_dolly_logistics_driver
+Installing Latch_Unlatch_2 script to /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/2_t_dolly_logistics_driver
+Installing Latch_Unlatch_3 script to /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/2_t_dolly_logistics_driver
+Installing Navigate_01 script to /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/2_t_dolly_logistics_driver
+Installing Navigate_02 script to /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/2_t_dolly_logistics_driver
+Installing Test_01 script to /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/2_t_dolly_logistics_driver
+Installing Tf script to /home/avinaash/daimler_tugger/doozy_ws_2/install/2_t_dolly_logistics_driver/lib/2_t_dolly_logistics_driver
+writing list of installed files to '/home/avinaash/daimler_tugger/doozy_ws_2/build/2_t_dolly_logistics_driver/install.log'
