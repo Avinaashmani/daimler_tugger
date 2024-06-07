@@ -14,6 +14,7 @@ class ShareData():
         self.left_ = Vector3()
         self.point_ = Vector3()
         self.cam_status_ = String()
+        self.sick_transform_ = TransformStamped()
 
 class SendGoal:
     def __init__(self) -> None:
@@ -26,11 +27,6 @@ class SendGoal:
         self.point_pub = rospy.Publisher('sick_camera/point', Vector3, queue_size=10)
         self.camera_status = rospy.Publisher('sick_camera/status', String, queue_size=10)
 
-        self.right_coner = Vector3()
-        self.left_corner = Vector3()
-        self.point = Vector3()
-        self.camera_status = String()
-
         self.header = Header()
         self.dolly_status = String()
         self.dolly_found =  Bool()
@@ -39,6 +35,8 @@ class SendGoal:
         self.camera_frame  = "dolly_01"
         self.base_frame = "map"
         self.sick_transform = TransformStamped()
+
+        self.shared_data = ShareData()
 
         rospy.on_shutdown(self.shutdown_callback)
 
@@ -69,7 +67,13 @@ class SendGoal:
             client_socket.close()
 
     def publish(self):
-        rospy.loginfo("Publishing TF and Camera_info")
+        print(f"X point ==> {self.point.x}")
+        print(f"Y point ==> {self.point.y}")
+        print(f"Z point ==> {self.point.z}")
+
+        self.left_pub.publish(self.shared_data.left_)
+        self.right_pub.publish(self.shared_data.right_)
+        self.point_pub.publish(self.shared_data.point_)
 
     def unpublish(self):
         rospy.loginfo("Unpublishing TF and Camera_info")
@@ -87,22 +91,23 @@ class DollyIdentify:
 
         # self.sick_pub = rospy.Publisher('sick_camera_topic', SickTMini, queue_size=10)
 
-        self.right_coner = Vector3()
-        self.left_corner = Vector3()
-        self.point = Vector3()
-        self.camera_status = String()
-
         self.header = Header()
         self.dolly_status = String()
         self.dolly_found =  Bool()
 
         # self.sick_data = SickTMini()
         self.read_camera_data()
-
-        self.sick_tf = TransformBroadcaster()        
+    
         self.camera_frame  = "dolly_01"
         self.base_frame = "map"
         self.sick_transform = TransformStamped()
+
+        self.share_data = ShareData()
+
+        self.left = self.share_data.left_
+        self.point = self.share_data.point_
+        self.right = self.share_data.right_
+        self.sick_tf = self.share_data.sick_transform_
 
     def read_camera_data(self):
 
@@ -114,41 +119,31 @@ class DollyIdentify:
 
             leftCorner = respond.json()['data']['detectionResult']['leftCorner']
 
-            self.left_corner.x = respond.json()['data']['detectionResult']['leftCorner']['X']
-            self.left_corner.y = respond.json()['data']['detectionResult']['leftCorner']['Y']
-            self.left_corner.z = respond.json()['data']['detectionResult']['leftCorner']['Z']
+            self.left.x = respond.json()['data']['detectionResult']['leftCorner']['X']
+            self.left.y = respond.json()['data']['detectionResult']['leftCorner']['Y']
+            self.left.z = respond.json()['data']['detectionResult']['leftCorner']['Z']
 
             self.point.x = (self.left_corner.x  / 1000 + self.right_coner.x / 1000) / 2
-            self.point.x = (self.left_corner.y  / 1000 + self.right_coner.y / 1000) / 2
-            self.point.x = (self.left_corner.z  / 1000 + self.right_coner.z / 1000) / 2
+            self.point.y = (self.left_corner.y  / 1000 + self.right_coner.y / 1000) / 2
+            self.point.z = (self.left_corner.z  / 1000 + self.right_coner.z / 1000) / 2
 
             rightCorner = respond.json()['data']['detectionResult']['rightCorner']
 
-            self.right_coner.x = respond.json()['data']['detectionResult']['rightCorner']['X']
-            self.right_coner.y = respond.json()['data']['detectionResult']['rightCorner']['Y']
-            self.right_coner.z = respond.json()['data']['detectionResult']['rightCorner']['Z']
+            self.right.x = respond.json()['data']['detectionResult']['rightCorner']['X']
+            self.right.y = respond.json()['data']['detectionResult']['rightCorner']['Y']
+            self.right.z = respond.json()['data']['detectionResult']['rightCorner']['Z']
 
 
-            self.sick_transform.header.stamp = rospy.Time().now()
-            self.sick_transform.header.frame_id = self.base_frame
-            self.sick_transform.child_frame_id = self.camera_frame 
+            self.sick_tf.header.stamp = rospy.Time().now()
+            self.sick_tf.header.frame_id = self.base_frame
+            self.sick_tf.child_frame_id = self.camera_frame 
 
-            self.sick_transform.transform.translation.x = self.right_coner.z
-            self.sick_transform.transform.translation.y = self.right_coner.x
+            self.sick_tf.transform.translation.x = self.right_coner.z
+            self.sick_tf.transform.translation.y = self.right_coner.x
             # self.sick_transform.transform.translation.z = self.right_coner.z
 
-            self.sick_transform.transform.rotation.z = 0.0
-            self.sick_transform.transform.rotation.w = 1.0
-
-            self.sick_tf.sendTransform((self.sick_transform.transform.translation.x, self.sick_transform.transform.translation.y), 
-                                       (self.sick_transform.transform.rotation.z, self.sick_transform.transform.translation.w), 
-                                       rospy.Time.now(), self.base_frame, self.camera_frame)
-
-            print(f"X point ==> {self.point.x}")
-            print(f"Y point ==> {self.point.y}")
-            print(f"Z point ==> {self.point.z}")
-            
-            self.sick_pub.publish(self.sick_data)
+            self.sick_tf.transform.rotation.z = 0.0
+            self.sick_tf.transform.rotation.w = 1.0
 
 def main():
     SendGoal()
